@@ -1,0 +1,356 @@
+{
+ "id": "q-sign-commitment",
+ "name": "Sign commitment",
+ "type": "ComposableScreen",
+ "payload": {
+  "elements": [
+   {
+    "id": "sg-sa",
+    "type": "SafeAreaView",
+    "props": {
+     "flex": 1,
+     "edges": [
+      "bottom"
+     ],
+     "backgroundColor": "#fff6f0"
+    },
+    "children": [
+     {
+      "id": "sg-z",
+      "type": "ZStack",
+      "props": {
+       "flex": 1,
+       "width": "100%",
+       "alignItems": "stretch"
+      },
+      "children": [
+       {
+        "id": "sg-decorL",
+        "type": "YStack",
+        "props": {
+         "flex": 1,
+         "width": "100%"
+        },
+        "children": [
+         {
+          "id": "sg-lav",
+          "type": "Image",
+          "props": {
+           "url": "https://raw.githubusercontent.com/MartinnRoca/that-girl-onboarding-assets/main/sg-lavender.png",
+           "width": 80,
+           "height": 150,
+           "resizeMode": "contain",
+           "marginLeft": 270,
+           "marginTop": 120
+          }
+         },
+         {
+          "id": "sg-flowerspacer",
+          "type": "YStack",
+          "props": {
+           "flex": 1,
+           "width": "100%"
+          },
+          "children": []
+         },
+         {
+          "id": "sg-flo",
+          "type": "Image",
+          "props": {
+           "url": "https://raw.githubusercontent.com/MartinnRoca/that-girl-onboarding-assets/main/sg-flower.png",
+           "width": 120,
+           "height": 105,
+           "resizeMode": "contain"
+          }
+         }
+        ]
+       },
+       {
+        "id": "sg-root",
+        "type": "YStack",
+        "props": {
+         "flex": 1,
+         "width": "100%",
+         "alignItems": "center",
+         "paddingHorizontal": 24
+        },
+        "children": [
+         {
+          "id": "sg-spt",
+          "type": "YStack",
+          "props": {
+           "width": "100%",
+           "height": 60
+          },
+          "children": []
+         },
+         {
+          "id": "sg-hdr",
+          "type": "XStack",
+          "props": {
+           "gap": 16,
+           "width": "100%",
+           "alignItems": "center"
+          },
+          "children": [
+           {
+            "id": "sg-back",
+            "type": "YStack",
+            "props": {
+             "width": 40,
+             "height": 40,
+             "alignItems": "center",
+             "borderColor": "#e5e5e5",
+             "borderWidth": 1,
+             "borderRadius": 40,
+             "justifyContent": "center",
+             "backgroundColor": "#FFFFFF"
+            },
+            "children": [
+             {
+              "id": "sg-bk",
+              "type": "Text",
+              "props": {
+               "color": "#000000",
+               "content": "‹",
+               "fontSize": 15,
+               "fontFamily": "Georgia"
+              }
+             }
+            ]
+           },
+           {
+            "id": "sg-track",
+            "type": "YStack",
+            "props": {
+             "flex": 1,
+             "height": 6,
+             "borderRadius": 23,
+             "justifyContent": "flex-start",
+             "backgroundColor": "#FFFFFF"
+            },
+            "children": [
+             {
+              "id": "sg-fill",
+              "type": "YStack",
+              "props": {
+               "width": "8%",
+               "height": 6,
+               "borderRadius": 23,
+               "backgroundColor": "#c7b4a2"
+              },
+              "children": []
+             }
+            ]
+           }
+          ]
+         },
+         {
+          "id": "sg-sp1",
+          "type": "YStack",
+          "props": {
+           "width": "100%",
+           "height": 28
+          },
+          "children": []
+         },
+         {
+          "id": "sg-tb",
+          "type": "YStack",
+          "props": {
+           "gap": 8,
+           "width": "100%",
+           "alignItems": "flex-start"
+          },
+          "children": [
+           {
+            "id": "sg-title",
+            "type": "Text",
+            "props": {
+             "color": "#000000",
+             "width": "100%",
+             "content": "Sign Your Commitment",
+             "fontSize": 24,
+             "fontFamily": "Georgia"
+            }
+           },
+           {
+            "id": "sg-sub",
+            "type": "Text",
+            "props": {
+             "color": "#585858",
+             "width": "100%",
+             "content": "Make it official. This is your pledge to yourself.",
+             "fontSize": 15
+            }
+           }
+          ]
+         },
+         {
+          "id": "sg-sp2",
+          "type": "YStack",
+          "props": {
+           "width": "100%",
+           "height": 20
+          },
+          "children": []
+         },
+         {
+          "id": "sg-card",
+          "type": "YStack",
+          "props": {
+           "width": "100%",
+           "gap": 20,
+           "alignItems": "center",
+           "backgroundColor": "#ddccbc33",
+           "borderRadius": 16,
+           "paddingHorizontal": 16,
+           "paddingVertical": 18
+          },
+          "children": [
+           {
+            "id": "sg-h",
+            "type": "Text",
+            "props": {
+             "color": "#997148",
+             "width": "100%",
+             "content": "MY COMMITMENT",
+             "fontSize": 20,
+             "fontFamily": "Georgia",
+             "textAlign": "center"
+            }
+           },
+           {
+            "id": "sg-pledge",
+            "type": "Text",
+            "props": {
+             "color": "#000000",
+             "width": "100%",
+             "content": "I commit to becoming That Girl. I will show up for my daily routines, build positive habits, and create an unbreakable streak.\n\nNo more excuses. Today, I take control.",
+             "fontSize": 16,
+             "fontFamily": "Georgia",
+             "textAlign": "center",
+             "lineHeight": 22
+            }
+           },
+           {
+            "id": "sg-sigbox",
+            "type": "YStack",
+            "props": {
+             "width": "100%",
+             "height": 280,
+             "backgroundColor": "#FFFFFF",
+             "borderRadius": 10,
+             "padding": 10,
+             "alignItems": "center",
+             "justifyContent": "space-between"
+            },
+            "children": [
+             {
+              "id": "sg-bar",
+              "type": "YStack",
+              "props": {
+               "width": 85,
+               "height": 6,
+               "backgroundColor": "#FFFFFF"
+              },
+              "children": []
+             },
+             {
+              "id": "sg-draw",
+              "type": "Text",
+              "props": {
+               "color": "#838383",
+               "content": "Draw your signature",
+               "fontSize": 12,
+               "fontFamily": "Georgia",
+               "textAlign": "center"
+              }
+             },
+             {
+              "id": "sg-signbtn",
+              "type": "Button",
+              "props": {
+               "color": "#FFFFFF",
+               "label": "Sign to commit",
+               "width": "100%",
+               "actions": [
+                "continue"
+               ],
+               "variant": "filled",
+               "fontSize": 16,
+               "textAlign": "center",
+               "fontFamily": "Georgia",
+               "fontWeight": "700",
+               "borderRadius": 16,
+               "backgroundColor": "#000000",
+               "paddingVertical": 16,
+               "paddingHorizontal": 24,
+               "backgroundGradient": {
+                "to": "bottom",
+                "from": "top",
+                "type": "linear",
+                "stops": [
+                 {
+                  "color": "#515151",
+                  "position": 0
+                 },
+                 {
+                  "color": "#000000",
+                  "position": 1
+                 }
+                ]
+               }
+              }
+             }
+            ]
+           }
+          ]
+         },
+         {
+          "id": "sg-spy",
+          "type": "YStack",
+          "props": {
+           "flex": 1,
+           "width": "100%"
+          },
+          "children": []
+         },
+         {
+          "id": "sg-skip",
+          "type": "Text",
+          "props": {
+           "color": "#8b8b8b",
+           "content": "Skip",
+           "fontSize": 16,
+           "fontFamily": "Georgia",
+           "textAlign": "center",
+           "paddingVertical": 16,
+           "onPress": [
+            "continue"
+           ]
+          }
+         },
+         {
+          "id": "sg-spb",
+          "type": "YStack",
+          "props": {
+           "width": "100%",
+           "height": 12
+          },
+          "children": []
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ "figmaUrl": "https://www.figma.com/design/t8RgAyKbdSS0P8jM3RIoN3/That-Girl?node-id=1251-1580",
+ "nextStep": null,
+ "customPayload": null,
+ "continueButtonLabel": "Continue",
+ "displayProgressHeader": false
+}

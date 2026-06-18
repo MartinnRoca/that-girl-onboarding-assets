@@ -1,0 +1,722 @@
+{
+ "id": "q-lifestyle",
+ "name": "Lifestyle",
+ "type": "ComposableScreen",
+ "payload": {
+  "elements": [
+   {
+    "id": "q-lifestyle-sa",
+    "type": "SafeAreaView",
+    "props": {
+     "flex": 1,
+     "edges": [
+      "bottom"
+     ],
+     "backgroundColor": "#fff6f0"
+    },
+    "children": [
+     {
+      "id": "q-lifestyle-root",
+      "type": "YStack",
+      "props": {
+       "flex": 1,
+       "width": "100%",
+       "alignItems": "center",
+       "paddingHorizontal": 24
+      },
+      "children": [
+       {
+        "id": "lf-spt",
+        "type": "YStack",
+        "props": {
+         "width": "100%",
+         "height": 60
+        },
+        "children": []
+       },
+       {
+        "id": "lf-hdr",
+        "type": "XStack",
+        "props": {
+         "gap": 16,
+         "width": "100%",
+         "alignItems": "center"
+        },
+        "children": [
+         {
+          "id": "lf-back",
+          "type": "YStack",
+          "props": {
+           "width": 40,
+           "height": 40,
+           "alignItems": "center",
+           "borderColor": "#e5e5e5",
+           "borderWidth": 1,
+           "borderRadius": 40,
+           "justifyContent": "center",
+           "backgroundColor": "#FFFFFF"
+          },
+          "children": [
+           {
+            "id": "lf-bk",
+            "type": "Text",
+            "props": {
+             "color": "#000000",
+             "content": "‹",
+             "fontSize": 15,
+             "fontFamily": "Georgia"
+            }
+           }
+          ]
+         },
+         {
+          "id": "lf-track",
+          "type": "YStack",
+          "props": {
+           "flex": 1,
+           "height": 6,
+           "borderRadius": 23,
+           "justifyContent": "flex-start",
+           "backgroundColor": "#FFFFFF"
+          },
+          "children": [
+           {
+            "id": "lf-fill",
+            "type": "YStack",
+            "props": {
+             "width": "8%",
+             "height": 6,
+             "borderRadius": 23,
+             "backgroundColor": "#c7b4a2"
+            },
+            "children": []
+           }
+          ]
+         }
+        ]
+       },
+       {
+        "id": "lf-sp1",
+        "type": "YStack",
+        "props": {
+         "width": "100%",
+         "height": 28
+        },
+        "children": []
+       },
+       {
+        "id": "lf-tb",
+        "type": "YStack",
+        "props": {
+         "gap": 8,
+         "width": "100%",
+         "alignItems": "flex-start"
+        },
+        "children": [
+         {
+          "id": "lf-title",
+          "type": "Text",
+          "props": {
+           "color": "#000000",
+           "width": "100%",
+           "content": "What best describes your lifestyle?",
+           "fontSize": 24,
+           "fontFamily": "Georgia",
+           "lineHeight": 30
+          }
+         },
+         {
+          "id": "lf-sub",
+          "type": "Text",
+          "props": {
+           "color": "#585858",
+           "width": "100%",
+           "content": "We'll adapt your routines to fit your life",
+           "fontSize": 15
+          }
+         }
+        ]
+       },
+       {
+        "id": "lf-sp2",
+        "type": "YStack",
+        "props": {
+         "width": "100%",
+         "height": 24
+        },
+        "children": []
+       },
+       {
+        "id": "lf-opts",
+        "type": "YStack",
+        "props": {
+         "gap": 16,
+         "width": "100%"
+        },
+        "children": [
+         {
+          "id": "lf-c-career",
+          "type": "YStack",
+          "props": {
+           "width": "100%",
+           "onPress": [
+            {
+             "name": "lifestyle",
+             "type": "setVariable",
+             "label": "Career focused",
+             "value": "career"
+            },
+            "continue"
+           ],
+           "elevation": 3,
+           "shadowColor": "#000000",
+           "borderRadius": 18,
+           "shadowOffset": {
+            "width": 0,
+            "height": 0
+           },
+           "shadowRadius": 15,
+           "shadowOpacity": 0.1,
+           "backgroundColor": "#FFFFFF",
+           "paddingVertical": 16,
+           "paddingHorizontal": 24
+          },
+          "children": [
+           {
+            "id": "lf-r-career",
+            "type": "XStack",
+            "props": {
+             "width": "100%",
+             "alignItems": "center",
+             "justifyContent": "space-between"
+            },
+            "children": [
+             {
+              "id": "lf-tx-career",
+              "type": "YStack",
+              "props": {
+               "gap": 8,
+               "alignItems": "flex-start"
+              },
+              "children": [
+               {
+                "id": "lf-t-career",
+                "type": "Text",
+                "props": {
+                 "color": "#000000",
+                 "content": "Career focused",
+                 "fontSize": 16,
+                 "fontFamily": "Georgia"
+                }
+               },
+               {
+                "id": "lf-s-career",
+                "type": "Text",
+                "props": {
+                 "color": "#baa289",
+                 "content": "Busy professional life",
+                 "fontSize": 12
+                }
+               }
+              ]
+             },
+             {
+              "id": "lf-e-career",
+              "type": "YStack",
+              "props": {
+               "width": 24,
+               "height": 24,
+               "borderColor": "#e5e5e5",
+               "borderWidth": 2,
+               "borderRadius": 12,
+               "backgroundColor": "#FFFFFF"
+              },
+              "children": []
+             }
+            ]
+           }
+          ]
+         },
+         {
+          "id": "lf-c-student",
+          "type": "YStack",
+          "props": {
+           "width": "100%",
+           "onPress": [
+            {
+             "name": "lifestyle",
+             "type": "setVariable",
+             "label": "Student life",
+             "value": "student"
+            },
+            "continue"
+           ],
+           "elevation": 3,
+           "shadowColor": "#000000",
+           "borderRadius": 18,
+           "shadowOffset": {
+            "width": 0,
+            "height": 0
+           },
+           "shadowRadius": 15,
+           "shadowOpacity": 0.1,
+           "backgroundColor": "#FFFFFF",
+           "paddingVertical": 16,
+           "paddingHorizontal": 24
+          },
+          "children": [
+           {
+            "id": "lf-r-student",
+            "type": "XStack",
+            "props": {
+             "width": "100%",
+             "alignItems": "center",
+             "justifyContent": "space-between"
+            },
+            "children": [
+             {
+              "id": "lf-tx-student",
+              "type": "YStack",
+              "props": {
+               "gap": 8,
+               "alignItems": "flex-start"
+              },
+              "children": [
+               {
+                "id": "lf-t-student",
+                "type": "Text",
+                "props": {
+                 "color": "#000000",
+                 "content": "Student life",
+                 "fontSize": 16,
+                 "fontFamily": "Georgia"
+                }
+               },
+               {
+                "id": "lf-s-student",
+                "type": "Text",
+                "props": {
+                 "color": "#baa289",
+                 "content": "Learning & growing",
+                 "fontSize": 12
+                }
+               }
+              ]
+             },
+             {
+              "id": "lf-e-student",
+              "type": "YStack",
+              "props": {
+               "width": 24,
+               "height": 24,
+               "borderColor": "#e5e5e5",
+               "borderWidth": 2,
+               "borderRadius": 12,
+               "backgroundColor": "#FFFFFF"
+              },
+              "children": []
+             }
+            ]
+           }
+          ]
+         },
+         {
+          "id": "lf-c-homemaker",
+          "type": "YStack",
+          "props": {
+           "width": "100%",
+           "onPress": [
+            {
+             "name": "lifestyle",
+             "type": "setVariable",
+             "label": "Homemaker",
+             "value": "homemaker"
+            },
+            "continue"
+           ],
+           "elevation": 3,
+           "shadowColor": "#000000",
+           "borderRadius": 18,
+           "shadowOffset": {
+            "width": 0,
+            "height": 0
+           },
+           "shadowRadius": 15,
+           "shadowOpacity": 0.1,
+           "backgroundColor": "#FFFFFF",
+           "paddingVertical": 16,
+           "paddingHorizontal": 24
+          },
+          "children": [
+           {
+            "id": "lf-r-homemaker",
+            "type": "XStack",
+            "props": {
+             "width": "100%",
+             "alignItems": "center",
+             "justifyContent": "space-between"
+            },
+            "children": [
+             {
+              "id": "lf-tx-homemaker",
+              "type": "YStack",
+              "props": {
+               "gap": 8,
+               "alignItems": "flex-start"
+              },
+              "children": [
+               {
+                "id": "lf-t-homemaker",
+                "type": "Text",
+                "props": {
+                 "color": "#000000",
+                 "content": "Homemaker",
+                 "fontSize": 16,
+                 "fontFamily": "Georgia"
+                }
+               },
+               {
+                "id": "lf-s-homemaker",
+                "type": "Text",
+                "props": {
+                 "color": "#baa289",
+                 "content": "Creating a beautiful home",
+                 "fontSize": 12
+                }
+               }
+              ]
+             },
+             {
+              "id": "lf-e-homemaker",
+              "type": "YStack",
+              "props": {
+               "width": 24,
+               "height": 24,
+               "borderColor": "#e5e5e5",
+               "borderWidth": 2,
+               "borderRadius": 12,
+               "backgroundColor": "#FFFFFF"
+              },
+              "children": []
+             }
+            ]
+           }
+          ]
+         },
+         {
+          "id": "lf-c-remote",
+          "type": "YStack",
+          "props": {
+           "width": "100%",
+           "onPress": [
+            {
+             "name": "lifestyle",
+             "type": "setVariable",
+             "label": "Remote worker",
+             "value": "remote"
+            },
+            "continue"
+           ],
+           "elevation": 3,
+           "shadowColor": "#000000",
+           "borderRadius": 18,
+           "shadowOffset": {
+            "width": 0,
+            "height": 0
+           },
+           "shadowRadius": 15,
+           "shadowOpacity": 0.1,
+           "backgroundColor": "#FFFFFF",
+           "paddingVertical": 16,
+           "paddingHorizontal": 24
+          },
+          "children": [
+           {
+            "id": "lf-r-remote",
+            "type": "XStack",
+            "props": {
+             "width": "100%",
+             "alignItems": "center",
+             "justifyContent": "space-between"
+            },
+            "children": [
+             {
+              "id": "lf-tx-remote",
+              "type": "YStack",
+              "props": {
+               "gap": 8,
+               "alignItems": "flex-start"
+              },
+              "children": [
+               {
+                "id": "lf-t-remote",
+                "type": "Text",
+                "props": {
+                 "color": "#000000",
+                 "content": "Remote worker",
+                 "fontSize": 16,
+                 "fontFamily": "Georgia"
+                }
+               },
+               {
+                "id": "lf-s-remote",
+                "type": "Text",
+                "props": {
+                 "color": "#baa289",
+                 "content": "Flexible work-from-home",
+                 "fontSize": 12
+                }
+               }
+              ]
+             },
+             {
+              "id": "lf-e-remote",
+              "type": "YStack",
+              "props": {
+               "width": 24,
+               "height": 24,
+               "borderColor": "#e5e5e5",
+               "borderWidth": 2,
+               "borderRadius": 12,
+               "backgroundColor": "#FFFFFF"
+              },
+              "children": []
+             }
+            ]
+           }
+          ]
+         },
+         {
+          "id": "lf-c-parent",
+          "type": "YStack",
+          "props": {
+           "width": "100%",
+           "onPress": [
+            {
+             "name": "lifestyle",
+             "type": "setVariable",
+             "label": "Busy parent",
+             "value": "parent"
+            },
+            "continue"
+           ],
+           "elevation": 3,
+           "shadowColor": "#000000",
+           "borderRadius": 18,
+           "shadowOffset": {
+            "width": 0,
+            "height": 0
+           },
+           "shadowRadius": 15,
+           "shadowOpacity": 0.1,
+           "backgroundColor": "#FFFFFF",
+           "paddingVertical": 16,
+           "paddingHorizontal": 24
+          },
+          "children": [
+           {
+            "id": "lf-r-parent",
+            "type": "XStack",
+            "props": {
+             "width": "100%",
+             "alignItems": "center",
+             "justifyContent": "space-between"
+            },
+            "children": [
+             {
+              "id": "lf-tx-parent",
+              "type": "YStack",
+              "props": {
+               "gap": 8,
+               "alignItems": "flex-start"
+              },
+              "children": [
+               {
+                "id": "lf-t-parent",
+                "type": "Text",
+                "props": {
+                 "color": "#000000",
+                 "content": "Busy parent",
+                 "fontSize": 16,
+                 "fontFamily": "Georgia"
+                }
+               },
+               {
+                "id": "lf-s-parent",
+                "type": "Text",
+                "props": {
+                 "color": "#baa289",
+                 "content": "Balancing family & self",
+                 "fontSize": 12
+                }
+               }
+              ]
+             },
+             {
+              "id": "lf-e-parent",
+              "type": "YStack",
+              "props": {
+               "width": 24,
+               "height": 24,
+               "borderColor": "#e5e5e5",
+               "borderWidth": 2,
+               "borderRadius": 12,
+               "backgroundColor": "#FFFFFF"
+              },
+              "children": []
+             }
+            ]
+           }
+          ]
+         },
+         {
+          "id": "lf-c-discovery",
+          "type": "YStack",
+          "props": {
+           "width": "100%",
+           "onPress": [
+            {
+             "name": "lifestyle",
+             "type": "setVariable",
+             "label": "Self discovery",
+             "value": "discovery"
+            },
+            "continue"
+           ],
+           "elevation": 3,
+           "shadowColor": "#000000",
+           "borderRadius": 18,
+           "shadowOffset": {
+            "width": 0,
+            "height": 0
+           },
+           "shadowRadius": 15,
+           "shadowOpacity": 0.1,
+           "backgroundColor": "#FFFFFF",
+           "paddingVertical": 16,
+           "paddingHorizontal": 24
+          },
+          "children": [
+           {
+            "id": "lf-r-discovery",
+            "type": "XStack",
+            "props": {
+             "width": "100%",
+             "alignItems": "center",
+             "justifyContent": "space-between"
+            },
+            "children": [
+             {
+              "id": "lf-tx-discovery",
+              "type": "YStack",
+              "props": {
+               "gap": 8,
+               "alignItems": "flex-start"
+              },
+              "children": [
+               {
+                "id": "lf-t-discovery",
+                "type": "Text",
+                "props": {
+                 "color": "#000000",
+                 "content": "Self discovery",
+                 "fontSize": 16,
+                 "fontFamily": "Georgia"
+                }
+               },
+               {
+                "id": "lf-s-discovery",
+                "type": "Text",
+                "props": {
+                 "color": "#baa289",
+                 "content": "Figuring out my path",
+                 "fontSize": 12
+                }
+               }
+              ]
+             },
+             {
+              "id": "lf-e-discovery",
+              "type": "YStack",
+              "props": {
+               "width": 24,
+               "height": 24,
+               "borderColor": "#e5e5e5",
+               "borderWidth": 2,
+               "borderRadius": 12,
+               "backgroundColor": "#FFFFFF"
+              },
+              "children": []
+             }
+            ]
+           }
+          ]
+         }
+        ]
+       },
+       {
+        "id": "lf-spy",
+        "type": "YStack",
+        "props": {
+         "flex": 1,
+         "width": "100%"
+        },
+        "children": []
+       },
+       {
+        "id": "lf-btn",
+        "type": "Button",
+        "props": {
+         "color": "#FFFFFF",
+         "label": "Continue",
+         "width": "100%",
+         "actions": [
+          "continue"
+         ],
+         "variant": "filled",
+         "fontSize": 16,
+         "textAlign": "center",
+         "fontFamily": "Georgia",
+         "fontWeight": "700",
+         "borderRadius": 16,
+         "backgroundColor": "#000000",
+         "paddingVertical": 16,
+         "paddingHorizontal": 24,
+         "backgroundGradient": {
+          "to": "bottom",
+          "from": "top",
+          "type": "linear",
+          "stops": [
+           {
+            "color": "#515151",
+            "position": 0
+           },
+           {
+            "color": "#000000",
+            "position": 1
+           }
+          ]
+         }
+        }
+       },
+       {
+        "id": "lf-spb",
+        "type": "YStack",
+        "props": {
+         "width": "100%",
+         "height": 12
+        },
+        "children": []
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ "figmaUrl": "https://www.figma.com/design/t8RgAyKbdSS0P8jM3RIoN3/That-Girl?node-id=1251-1947",
+ "nextStep": null,
+ "customPayload": null,
+ "continueButtonLabel": "Continue",
+ "displayProgressHeader": false
+}

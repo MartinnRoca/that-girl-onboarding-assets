@@ -1,0 +1,423 @@
+{
+ "id": "loader-creating-plan",
+ "name": "Creating your plan",
+ "type": "ComposableScreen",
+ "payload": {
+  "elements": [
+   {
+    "id": "ld-sa",
+    "type": "SafeAreaView",
+    "props": {
+     "flex": 1,
+     "edges": [
+      "bottom"
+     ],
+     "backgroundColor": "#fff6f0"
+    },
+    "children": [
+     {
+      "id": "ld-root",
+      "type": "YStack",
+      "props": {
+       "flex": 1,
+       "width": "100%",
+       "alignItems": "center",
+       "paddingHorizontal": 24
+      },
+      "children": [
+       {
+        "id": "ld-sp0",
+        "type": "YStack",
+        "props": {
+         "flex": 1,
+         "width": "100%"
+        },
+        "children": []
+       },
+       {
+        "id": "ld-eye",
+        "type": "Image",
+        "props": {
+         "url": "https://raw.githubusercontent.com/MartinnRoca/that-girl-onboarding-assets/main/sci-eyemask.png",
+         "width": 101,
+         "height": 71,
+         "resizeMode": "contain"
+        }
+       },
+       {
+        "id": "ld-sp1",
+        "type": "YStack",
+        "props": {
+         "width": "100%",
+         "height": 24
+        },
+        "children": []
+       },
+       {
+        "id": "ld-title",
+        "type": "Text",
+        "props": {
+         "color": "#000000",
+         "width": "100%",
+         "content": "Creating Your Plan",
+         "fontSize": 24,
+         "fontFamily": "Georgia",
+         "textAlign": "center"
+        }
+       },
+       {
+        "id": "ld-sp2",
+        "type": "YStack",
+        "props": {
+         "width": "100%",
+         "height": 64
+        },
+        "children": []
+       },
+       {
+        "id": "ld-rows",
+        "type": "YStack",
+        "props": {
+         "gap": 40,
+         "alignItems": "center"
+        },
+        "children": [
+         {
+          "id": "ld-row-goal",
+          "type": "YStack",
+          "props": {
+           "width": 264,
+           "gap": 12,
+           "justifyContent": "center"
+          },
+          "children": [
+           {
+            "id": "ld-lr-goal",
+            "type": "XStack",
+            "props": {
+             "width": "100%",
+             "alignItems": "center",
+             "justifyContent": "space-between"
+            },
+            "children": [
+             {
+              "id": "ld-l-goal",
+              "type": "Text",
+              "props": {
+               "color": "#4d4d4d",
+               "content": "1 goal identified",
+               "fontSize": 14,
+               "fontFamily": "Georgia"
+              }
+             },
+             {
+              "id": "ld-ck-goal",
+              "type": "YStack",
+              "props": {
+               "width": 20,
+               "height": 20,
+               "borderRadius": 20,
+               "backgroundColor": "#a09386",
+               "alignItems": "center",
+               "justifyContent": "center"
+              },
+              "children": [
+               {
+                "id": "ld-cm-goal",
+                "type": "Text",
+                "props": {
+                 "color": "#FFFFFF",
+                 "content": "✓",
+                 "fontSize": 12
+                }
+               }
+              ]
+             }
+            ]
+           },
+           {
+            "id": "ld-tr-goal",
+            "type": "YStack",
+            "props": {
+             "width": 264,
+             "height": 6,
+             "borderRadius": 23,
+             "backgroundColor": "#FFFFFF",
+             "justifyContent": "flex-start"
+            },
+            "children": [
+             {
+              "id": "ld-fl-goal",
+              "type": "YStack",
+              "props": {
+               "width": 139,
+               "height": 6,
+               "borderRadius": 23,
+               "backgroundColor": "#a09386"
+              },
+              "children": []
+             }
+            ]
+           }
+          ]
+         },
+         {
+          "id": "ld-row-morning",
+          "type": "YStack",
+          "props": {
+           "width": 264,
+           "gap": 12,
+           "justifyContent": "center"
+          },
+          "children": [
+           {
+            "id": "ld-lr-morning",
+            "type": "XStack",
+            "props": {
+             "width": "100%",
+             "alignItems": "center",
+             "justifyContent": "space-between"
+            },
+            "children": [
+             {
+              "id": "ld-l-morning",
+              "type": "Text",
+              "props": {
+               "color": "#4d4d4d",
+               "content": "3 morning activities",
+               "fontSize": 14,
+               "fontFamily": "Georgia"
+              }
+             },
+             {
+              "id": "ld-ck-morning",
+              "type": "YStack",
+              "props": {
+               "width": 20,
+               "height": 20,
+               "borderRadius": 20,
+               "backgroundColor": "#a09386",
+               "alignItems": "center",
+               "justifyContent": "center"
+              },
+              "children": [
+               {
+                "id": "ld-cm-morning",
+                "type": "Text",
+                "props": {
+                 "color": "#FFFFFF",
+                 "content": "✓",
+                 "fontSize": 12
+                }
+               }
+              ]
+             }
+            ]
+           },
+           {
+            "id": "ld-tr-morning",
+            "type": "YStack",
+            "props": {
+             "width": 264,
+             "height": 6,
+             "borderRadius": 23,
+             "backgroundColor": "#FFFFFF",
+             "justifyContent": "flex-start"
+            },
+            "children": [
+             {
+              "id": "ld-fl-morning",
+              "type": "YStack",
+              "props": {
+               "width": 139,
+               "height": 6,
+               "borderRadius": 23,
+               "backgroundColor": "#a09386"
+              },
+              "children": []
+             }
+            ]
+           }
+          ]
+         },
+         {
+          "id": "ld-row-evening",
+          "type": "YStack",
+          "props": {
+           "width": 264,
+           "gap": 12,
+           "justifyContent": "center"
+          },
+          "children": [
+           {
+            "id": "ld-lr-evening",
+            "type": "XStack",
+            "props": {
+             "width": "100%",
+             "alignItems": "center",
+             "justifyContent": "space-between"
+            },
+            "children": [
+             {
+              "id": "ld-l-evening",
+              "type": "Text",
+              "props": {
+               "color": "#4d4d4d",
+               "content": "3 evening activities",
+               "fontSize": 14,
+               "fontFamily": "Georgia"
+              }
+             },
+             {
+              "id": "ld-ck-evening",
+              "type": "YStack",
+              "props": {
+               "width": 20,
+               "height": 20,
+               "borderRadius": 20,
+               "backgroundColor": "#a09386",
+               "alignItems": "center",
+               "justifyContent": "center"
+              },
+              "children": [
+               {
+                "id": "ld-cm-evening",
+                "type": "Text",
+                "props": {
+                 "color": "#FFFFFF",
+                 "content": "✓",
+                 "fontSize": 12
+                }
+               }
+              ]
+             }
+            ]
+           },
+           {
+            "id": "ld-tr-evening",
+            "type": "YStack",
+            "props": {
+             "width": 264,
+             "height": 6,
+             "borderRadius": 23,
+             "backgroundColor": "#FFFFFF",
+             "justifyContent": "flex-start"
+            },
+            "children": [
+             {
+              "id": "ld-fl-evening",
+              "type": "YStack",
+              "props": {
+               "width": 139,
+               "height": 6,
+               "borderRadius": 23,
+               "backgroundColor": "#a09386"
+              },
+              "children": []
+             }
+            ]
+           }
+          ]
+         },
+         {
+          "id": "ld-row-challenges",
+          "type": "YStack",
+          "props": {
+           "width": 264,
+           "gap": 12,
+           "justifyContent": "center"
+          },
+          "children": [
+           {
+            "id": "ld-lr-challenges",
+            "type": "XStack",
+            "props": {
+             "width": "100%",
+             "alignItems": "center",
+             "justifyContent": "space-between"
+            },
+            "children": [
+             {
+              "id": "ld-l-challenges",
+              "type": "Text",
+              "props": {
+               "color": "#4d4d4d",
+               "content": "2 challenges ready",
+               "fontSize": 14,
+               "fontFamily": "Georgia"
+              }
+             },
+             {
+              "id": "ld-ck-challenges",
+              "type": "YStack",
+              "props": {
+               "width": 20,
+               "height": 20,
+               "borderRadius": 20,
+               "backgroundColor": "#a09386",
+               "alignItems": "center",
+               "justifyContent": "center"
+              },
+              "children": [
+               {
+                "id": "ld-cm-challenges",
+                "type": "Text",
+                "props": {
+                 "color": "#FFFFFF",
+                 "content": "✓",
+                 "fontSize": 12
+                }
+               }
+              ]
+             }
+            ]
+           },
+           {
+            "id": "ld-tr-challenges",
+            "type": "YStack",
+            "props": {
+             "width": 264,
+             "height": 6,
+             "borderRadius": 23,
+             "backgroundColor": "#FFFFFF",
+             "justifyContent": "flex-start"
+            },
+            "children": [
+             {
+              "id": "ld-fl-challenges",
+              "type": "YStack",
+              "props": {
+               "width": 139,
+               "height": 6,
+               "borderRadius": 23,
+               "backgroundColor": "#a09386"
+              },
+              "children": []
+             }
+            ]
+           }
+          ]
+         }
+        ]
+       },
+       {
+        "id": "ld-sp3",
+        "type": "YStack",
+        "props": {
+         "flex": 1,
+         "width": "100%"
+        },
+        "children": []
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ "figmaUrl": "https://www.figma.com/design/t8RgAyKbdSS0P8jM3RIoN3/That-Girl?node-id=1251-1878",
+ "nextStep": null,
+ "customPayload": null,
+ "continueButtonLabel": "Continue",
+ "displayProgressHeader": false
+}

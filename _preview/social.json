@@ -1,0 +1,595 @@
+{
+ "id": "social-proof-real-results",
+ "name": "Real results",
+ "type": "ComposableScreen",
+ "payload": {
+  "elements": [
+   {
+    "id": "sp-sa",
+    "type": "SafeAreaView",
+    "props": {
+     "flex": 1,
+     "edges": [
+      "bottom"
+     ],
+     "backgroundColor": "#fff6f0"
+    },
+    "children": [
+     {
+      "id": "sp-root",
+      "type": "YStack",
+      "props": {
+       "flex": 1,
+       "width": "100%",
+       "alignItems": "center",
+       "paddingHorizontal": 24
+      },
+      "children": [
+       {
+        "id": "sp-spt",
+        "type": "YStack",
+        "props": {
+         "width": "100%",
+         "height": 60
+        },
+        "children": []
+       },
+       {
+        "id": "sp-hdr",
+        "type": "XStack",
+        "props": {
+         "gap": 16,
+         "width": "100%",
+         "alignItems": "center"
+        },
+        "children": [
+         {
+          "id": "sp-back",
+          "type": "YStack",
+          "props": {
+           "width": 40,
+           "height": 40,
+           "alignItems": "center",
+           "borderColor": "#e5e5e5",
+           "borderWidth": 1,
+           "borderRadius": 40,
+           "justifyContent": "center",
+           "backgroundColor": "#FFFFFF"
+          },
+          "children": [
+           {
+            "id": "sp-bk",
+            "type": "Text",
+            "props": {
+             "color": "#000000",
+             "content": "‹",
+             "fontSize": 15,
+             "fontFamily": "Georgia"
+            }
+           }
+          ]
+         },
+         {
+          "id": "sp-track",
+          "type": "YStack",
+          "props": {
+           "flex": 1,
+           "height": 6,
+           "borderRadius": 23,
+           "justifyContent": "flex-start",
+           "backgroundColor": "#FFFFFF"
+          },
+          "children": [
+           {
+            "id": "sp-fill",
+            "type": "YStack",
+            "props": {
+             "width": "8%",
+             "height": 6,
+             "borderRadius": 23,
+             "backgroundColor": "#c7b4a2"
+            },
+            "children": []
+           }
+          ]
+         }
+        ]
+       },
+       {
+        "id": "sp-sp1",
+        "type": "YStack",
+        "props": {
+         "width": "100%",
+         "height": 28
+        },
+        "children": []
+       },
+       {
+        "id": "sp-tb",
+        "type": "YStack",
+        "props": {
+         "gap": 8,
+         "width": "100%",
+         "alignItems": "flex-start"
+        },
+        "children": [
+         {
+          "id": "sp-title",
+          "type": "Text",
+          "props": {
+           "color": "#000000",
+           "width": "100%",
+           "content": "Real Results From Real Women",
+           "fontSize": 24,
+           "fontFamily": "Georgia",
+           "lineHeight": 30
+          }
+         },
+         {
+          "id": "sp-subt",
+          "type": "Text",
+          "props": {
+           "color": "#585858",
+           "width": "100%",
+           "content": "See what others have achieved",
+           "fontSize": 15
+          }
+         }
+        ]
+       },
+       {
+        "id": "sp-sp2",
+        "type": "YStack",
+        "props": {
+         "width": "100%",
+         "height": 20
+        },
+        "children": []
+       },
+       {
+        "id": "sp-rating",
+        "type": "XStack",
+        "props": {
+         "width": "100%",
+         "gap": 24,
+         "alignItems": "center",
+         "paddingVertical": 10
+        },
+        "children": [
+         {
+          "id": "sp-49",
+          "type": "Text",
+          "props": {
+           "color": "#000000",
+           "content": "4.9",
+           "fontSize": 64,
+           "fontFamily": "Georgia"
+          }
+         },
+         {
+          "id": "sp-rcol",
+          "type": "YStack",
+          "props": {
+           "gap": 8,
+           "alignItems": "flex-start",
+           "justifyContent": "center"
+          },
+          "children": [
+           {
+            "id": "sp-rstars",
+            "type": "Text",
+            "props": {
+             "color": "#e0a93f",
+             "content": "★★★★★",
+             "fontSize": 18
+            }
+           },
+           {
+            "id": "sp-r1",
+            "type": "Text",
+            "props": {
+             "color": "#636363",
+             "content": "50K+ Women",
+             "fontSize": 14,
+             "fontFamily": "Georgia"
+            }
+           },
+           {
+            "id": "sp-r2",
+            "type": "Text",
+            "props": {
+             "color": "#636363",
+             "content": "89% success",
+             "fontSize": 14,
+             "fontFamily": "Georgia"
+            }
+           }
+          ]
+         }
+        ]
+       },
+       {
+        "id": "sp-sp3",
+        "type": "YStack",
+        "props": {
+         "width": "100%",
+         "height": 16
+        },
+        "children": []
+       },
+       {
+        "id": "sp-cards",
+        "type": "YStack",
+        "props": {
+         "gap": 8,
+         "width": "100%"
+        },
+        "children": [
+         {
+          "id": "sp-card-a",
+          "type": "XStack",
+          "props": {
+           "width": "100%",
+           "gap": 10,
+           "alignItems": "center",
+           "backgroundColor": "#ffefe3",
+           "borderColor": "#e8e8e8",
+           "borderWidth": 1,
+           "borderRadius": 6,
+           "paddingHorizontal": 10,
+           "paddingVertical": 10,
+           "overflow": "hidden"
+          },
+          "children": [
+           {
+            "id": "sp-pol-a",
+            "type": "Image",
+            "props": {
+             "url": "https://raw.githubusercontent.com/MartinnRoca/that-girl-onboarding-assets/main/sp-pol01.png",
+             "width": 82,
+             "height": 90,
+             "resizeMode": "cover",
+             "borderRadius": 4
+            }
+           },
+           {
+            "id": "sp-tx-a",
+            "type": "YStack",
+            "props": {
+             "flex": 1,
+             "gap": 6,
+             "alignItems": "flex-start"
+            },
+            "children": [
+             {
+              "id": "sp-st-a",
+              "type": "Text",
+              "props": {
+               "color": "#e0a93f",
+               "content": "★★★★★",
+               "fontSize": 10
+              }
+             },
+             {
+              "id": "sp-q-a",
+              "type": "Text",
+              "props": {
+               "color": "#000000",
+               "content": "That Girl transformed my life.",
+               "fontSize": 14,
+               "fontFamily": "Georgia"
+              }
+             },
+             {
+              "id": "sp-sub-a",
+              "type": "Text",
+              "props": {
+               "color": "#4c4c4c",
+               "content": "The daily routines keep me accountable.",
+               "fontSize": 12,
+               "fontFamily": "Georgia"
+              }
+             },
+             {
+              "id": "sp-row-a",
+              "type": "XStack",
+              "props": {
+               "width": "100%",
+               "justifyContent": "space-between",
+               "alignItems": "center"
+              },
+              "children": [
+               {
+                "id": "sp-nm-a",
+                "type": "Text",
+                "props": {
+                 "color": "#909090",
+                 "content": "Sarah M.",
+                 "fontSize": 12,
+                 "fontFamily": "Georgia"
+                }
+               },
+               {
+                "id": "sp-stk-a",
+                "type": "Text",
+                "props": {
+                 "color": "#997148",
+                 "content": "100 day streak",
+                 "fontSize": 12,
+                 "fontFamily": "Georgia"
+                }
+               }
+              ]
+             }
+            ]
+           }
+          ]
+         },
+         {
+          "id": "sp-card-b",
+          "type": "XStack",
+          "props": {
+           "width": "100%",
+           "gap": 10,
+           "alignItems": "center",
+           "backgroundColor": "#ffefe3",
+           "borderColor": "#e8e8e8",
+           "borderWidth": 1,
+           "borderRadius": 6,
+           "paddingHorizontal": 10,
+           "paddingVertical": 10,
+           "overflow": "hidden"
+          },
+          "children": [
+           {
+            "id": "sp-pol-b",
+            "type": "Image",
+            "props": {
+             "url": "https://raw.githubusercontent.com/MartinnRoca/that-girl-onboarding-assets/main/sp-pol04.png",
+             "width": 82,
+             "height": 90,
+             "resizeMode": "cover",
+             "borderRadius": 4
+            }
+           },
+           {
+            "id": "sp-tx-b",
+            "type": "YStack",
+            "props": {
+             "flex": 1,
+             "gap": 6,
+             "alignItems": "flex-start"
+            },
+            "children": [
+             {
+              "id": "sp-st-b",
+              "type": "Text",
+              "props": {
+               "color": "#e0a93f",
+               "content": "★★★★★",
+               "fontSize": 10
+              }
+             },
+             {
+              "id": "sp-q-b",
+              "type": "Text",
+              "props": {
+               "color": "#000000",
+               "content": "The streak system is genius.",
+               "fontSize": 14,
+               "fontFamily": "Georgia"
+              }
+             },
+             {
+              "id": "sp-sub-b",
+              "type": "Text",
+              "props": {
+               "color": "#4c4c4c",
+               "content": "Best decision ever!",
+               "fontSize": 12,
+               "fontFamily": "Georgia"
+              }
+             },
+             {
+              "id": "sp-row-b",
+              "type": "XStack",
+              "props": {
+               "width": "100%",
+               "justifyContent": "space-between",
+               "alignItems": "center"
+              },
+              "children": [
+               {
+                "id": "sp-nm-b",
+                "type": "Text",
+                "props": {
+                 "color": "#909090",
+                 "content": "Emma K.",
+                 "fontSize": 12,
+                 "fontFamily": "Georgia"
+                }
+               },
+               {
+                "id": "sp-stk-b",
+                "type": "Text",
+                "props": {
+                 "color": "#997148",
+                 "content": "30 day streak",
+                 "fontSize": 12,
+                 "fontFamily": "Georgia"
+                }
+               }
+              ]
+             }
+            ]
+           }
+          ]
+         },
+         {
+          "id": "sp-card-c",
+          "type": "XStack",
+          "props": {
+           "width": "100%",
+           "gap": 10,
+           "alignItems": "center",
+           "backgroundColor": "#ffefe3",
+           "borderColor": "#e8e8e8",
+           "borderWidth": 1,
+           "borderRadius": 6,
+           "paddingHorizontal": 10,
+           "paddingVertical": 10,
+           "overflow": "hidden"
+          },
+          "children": [
+           {
+            "id": "sp-pol-c",
+            "type": "Image",
+            "props": {
+             "url": "https://raw.githubusercontent.com/MartinnRoca/that-girl-onboarding-assets/main/sp-pol02.png",
+             "width": 82,
+             "height": 90,
+             "resizeMode": "cover",
+             "borderRadius": 4
+            }
+           },
+           {
+            "id": "sp-tx-c",
+            "type": "YStack",
+            "props": {
+             "flex": 1,
+             "gap": 6,
+             "alignItems": "flex-start"
+            },
+            "children": [
+             {
+              "id": "sp-st-c",
+              "type": "Text",
+              "props": {
+               "color": "#e0a93f",
+               "content": "★★★★★",
+               "fontSize": 10
+              }
+             },
+             {
+              "id": "sp-q-c",
+              "type": "Text",
+              "props": {
+               "color": "#000000",
+               "content": "My morning routine is now",
+               "fontSize": 14,
+               "fontFamily": "Georgia"
+              }
+             },
+             {
+              "id": "sp-sub-c",
+              "type": "Text",
+              "props": {
+               "color": "#4c4c4c",
+               "content": "My favorite part of the day.",
+               "fontSize": 12,
+               "fontFamily": "Georgia"
+              }
+             },
+             {
+              "id": "sp-row-c",
+              "type": "XStack",
+              "props": {
+               "width": "100%",
+               "justifyContent": "space-between",
+               "alignItems": "center"
+              },
+              "children": [
+               {
+                "id": "sp-nm-c",
+                "type": "Text",
+                "props": {
+                 "color": "#909090",
+                 "content": "Olivia R.",
+                 "fontSize": 12,
+                 "fontFamily": "Georgia"
+                }
+               },
+               {
+                "id": "sp-stk-c",
+                "type": "Text",
+                "props": {
+                 "color": "#997148",
+                 "content": "60 day streak",
+                 "fontSize": 12,
+                 "fontFamily": "Georgia"
+                }
+               }
+              ]
+             }
+            ]
+           }
+          ]
+         }
+        ]
+       },
+       {
+        "id": "sp-spy",
+        "type": "YStack",
+        "props": {
+         "flex": 1,
+         "width": "100%"
+        },
+        "children": []
+       },
+       {
+        "id": "sp-btn",
+        "type": "Button",
+        "props": {
+         "color": "#FFFFFF",
+         "label": "Continue",
+         "width": "100%",
+         "actions": [
+          "continue"
+         ],
+         "variant": "filled",
+         "fontSize": 16,
+         "textAlign": "center",
+         "fontFamily": "Georgia",
+         "fontWeight": "700",
+         "borderRadius": 16,
+         "backgroundColor": "#000000",
+         "paddingVertical": 16,
+         "paddingHorizontal": 24,
+         "backgroundGradient": {
+          "to": "bottom",
+          "from": "top",
+          "type": "linear",
+          "stops": [
+           {
+            "color": "#515151",
+            "position": 0
+           },
+           {
+            "color": "#000000",
+            "position": 1
+           }
+          ]
+         }
+        }
+       },
+       {
+        "id": "sp-spb",
+        "type": "YStack",
+        "props": {
+         "width": "100%",
+         "height": 12
+        },
+        "children": []
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ "figmaUrl": "https://www.figma.com/design/t8RgAyKbdSS0P8jM3RIoN3/That-Girl?node-id=1251-1709",
+ "nextStep": null,
+ "customPayload": null,
+ "continueButtonLabel": "Continue",
+ "displayProgressHeader": false
+}
