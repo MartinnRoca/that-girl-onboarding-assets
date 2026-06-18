@@ -339,8 +339,8 @@
               "type": "Image",
               "props": {
                "url": "https://raw.githubusercontent.com/MartinnRoca/that-girl-onboarding-assets/main/sci-jade.png",
-               "width": 64,
-               "height": 120,
+               "width": 46,
+               "height": 86,
                "resizeMode": "contain",
                "marginRight": -8,
                "transform": {
