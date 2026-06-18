@@ -1,55 +1,103 @@
 {
-  "id": "q-wake-time",
-  "name": "Wake up time",
+  "id": "q-morning-routine",
+  "name": "Morning routine",
   "type": "ComposableScreen",
   "payload": {
     "elements": [
       {
-        "id": "wk-sa",
+        "id": "mr-sa",
         "type": "SafeAreaView",
         "props": { "flex": 1, "edges": ["bottom"], "backgroundColor": "#fff6f0" },
         "children": [
           {
-            "id": "wk-root",
+            "id": "mr-root",
             "type": "YStack",
             "props": { "flex": 1, "width": "100%", "alignItems": "center", "paddingHorizontal": 24 },
             "children": [
-              { "id": "wk-spt", "type": "YStack", "props": { "width": "100%", "height": 60 }, "children": [] },
+              { "id": "mr-spt", "type": "YStack", "props": { "width": "100%", "height": 60 }, "children": [] },
               {
-                "id": "wk-hdr",
+                "id": "mr-hdr",
                 "type": "XStack",
                 "props": { "gap": 16, "width": "100%", "alignItems": "center" },
                 "children": [
-                  { "id": "wk-back", "type": "YStack", "props": { "width": 40, "height": 40, "alignItems": "center", "borderColor": "#e5e5e5", "borderWidth": 1, "borderRadius": 40, "justifyContent": "center", "backgroundColor": "#FFFFFF" }, "children": [ { "id": "wk-bk", "type": "Text", "props": { "color": "#000000", "content": "‹", "fontSize": 15, "fontFamily": "Georgia" } } ] },
-                  { "id": "wk-track", "type": "YStack", "props": { "flex": 1, "height": 6, "borderRadius": 23, "justifyContent": "flex-start", "backgroundColor": "#FFFFFF" }, "children": [ { "id": "wk-fill", "type": "YStack", "props": { "width": "26%", "height": 6, "borderRadius": 23, "backgroundColor": "#c7b4a2" }, "children": [] } ] }
+                  { "id": "mr-back", "type": "YStack", "props": { "width": 40, "height": 40, "alignItems": "center", "borderColor": "#e5e5e5", "borderWidth": 1, "borderRadius": 40, "justifyContent": "center", "backgroundColor": "#FFFFFF" }, "children": [ { "id": "mr-bk", "type": "Text", "props": { "color": "#000000", "content": "‹", "fontSize": 15, "fontFamily": "Georgia" } } ] },
+                  { "id": "mr-track", "type": "YStack", "props": { "flex": 1, "height": 6, "borderRadius": 23, "justifyContent": "flex-start", "backgroundColor": "#FFFFFF" }, "children": [ { "id": "mr-fill", "type": "YStack", "props": { "width": "8%", "height": 6, "borderRadius": 23, "backgroundColor": "#c7b4a2" }, "children": [] } ] }
                 ]
               },
-              { "id": "wk-sp1", "type": "YStack", "props": { "width": "100%", "height": 32 }, "children": [] },
+              { "id": "mr-sp1", "type": "YStack", "props": { "width": "100%", "height": 28 }, "children": [] },
               {
-                "id": "wk-tb",
+                "id": "mr-tb",
                 "type": "YStack",
                 "props": { "gap": 8, "width": "100%", "alignItems": "flex-start" },
                 "children": [
-                  { "id": "wk-title", "type": "Text", "props": { "color": "#000000", "width": "100%", "content": "What time do you usually wake up?", "fontSize": 24, "fontFamily": "Georgia", "lineHeight": 30 } },
-                  { "id": "wk-sub", "type": "Text", "props": { "color": "#585858", "width": "100%", "content": "We'll create a rising routine for you", "fontSize": 15 } }
+                  { "id": "mr-title", "type": "Text", "props": { "color": "#000000", "width": "100%", "content": "Do you have a morning routine?", "fontSize": 24, "fontFamily": "Georgia", "lineHeight": 30 } },
+                  { "id": "mr-sub", "type": "Text", "props": { "color": "#585858", "width": "100%", "content": "A good morning set you up to build habits", "fontSize": 15 } }
                 ]
               },
-              { "id": "wk-sp2", "type": "YStack", "props": { "width": "100%", "height": 64 }, "children": [] },
-              { "id": "wk-dp", "type": "DatePicker", "props": { "mode": "time", "width": "100%", "display": "spinner", "textColor": "#000000", "accentColor": "#000000", "variableName": "wakeTime" } },
-              { "id": "wk-spy", "type": "YStack", "props": { "flex": 1, "width": "100%" }, "children": [] },
+              { "id": "mr-sp2", "type": "YStack", "props": { "width": "100%", "height": 24 }, "children": [] },
               {
-                "id": "wk-btn",
+                "id": "mr-opts",
+                "type": "YStack",
+                "props": { "gap": 12, "width": "100%" },
+                "children": [
+                  {
+                    "id": "mr-c-none",
+                    "type": "YStack",
+                    "props": { "width": "100%", "onPress": [ { "name": "morningRoutine", "type": "setVariable", "label": "None", "value": "none" }, "continue" ], "elevation": 3, "shadowColor": "#000000", "borderRadius": 18, "shadowOffset": { "width": 0, "height": 0 }, "shadowRadius": 15, "shadowOpacity": 0.1, "backgroundColor": "#FFFFFF", "paddingVertical": 16, "paddingHorizontal": 24 },
+                    "children": [
+                      { "id": "mr-r-none", "type": "XStack", "props": { "width": "100%", "alignItems": "center", "justifyContent": "space-between" }, "children": [
+                        { "id": "mr-tx-none", "type": "YStack", "props": { "gap": 8, "alignItems": "flex-start" }, "children": [
+                          { "id": "mr-t-none", "type": "Text", "props": { "color": "#000000", "content": "None", "fontSize": 16, "fontFamily": "Georgia" } },
+                          { "id": "mr-s-none", "type": "Text", "props": { "color": "#baa289", "content": "I don’t have one yet", "fontSize": 12 } }
+                        ] },
+                        { "id": "mr-e-none", "type": "YStack", "props": { "width": 24, "height": 24, "borderColor": "#e5e5e5", "borderWidth": 2, "borderRadius": 12, "backgroundColor": "#FFFFFF" }, "children": [] }
+                      ] }
+                    ]
+                  },
+                  {
+                    "id": "mr-c-basic",
+                    "type": "YStack",
+                    "props": { "width": "100%", "onPress": [ { "name": "morningRoutine", "type": "setVariable", "label": "Basic", "value": "basic" }, "continue" ], "elevation": 3, "shadowColor": "#000000", "borderRadius": 18, "shadowOffset": { "width": 0, "height": 0 }, "shadowRadius": 15, "shadowOpacity": 0.1, "backgroundColor": "#FFFFFF", "paddingVertical": 16, "paddingHorizontal": 24 },
+                    "children": [
+                      { "id": "mr-r-basic", "type": "XStack", "props": { "width": "100%", "alignItems": "center", "justifyContent": "space-between" }, "children": [
+                        { "id": "mr-tx-basic", "type": "YStack", "props": { "gap": 8, "alignItems": "flex-start" }, "children": [
+                          { "id": "mr-t-basic", "type": "Text", "props": { "color": "#000000", "content": "Basic", "fontSize": 16, "fontFamily": "Georgia" } },
+                          { "id": "mr-s-basic", "type": "Text", "props": { "color": "#baa289", "content": "A few simple habites", "fontSize": 12 } }
+                        ] },
+                        { "id": "mr-e-basic", "type": "YStack", "props": { "width": 24, "height": 24, "borderColor": "#e5e5e5", "borderWidth": 2, "borderRadius": 12, "backgroundColor": "#FFFFFF" }, "children": [] }
+                      ] }
+                    ]
+                  },
+                  {
+                    "id": "mr-c-est",
+                    "type": "YStack",
+                    "props": { "width": "100%", "onPress": [ { "name": "morningRoutine", "type": "setVariable", "label": "Established", "value": "established" }, "continue" ], "elevation": 3, "shadowColor": "#000000", "borderRadius": 18, "shadowOffset": { "width": 0, "height": 0 }, "shadowRadius": 15, "shadowOpacity": 0.1, "backgroundColor": "#FFFFFF", "paddingVertical": 16, "paddingHorizontal": 24 },
+                    "children": [
+                      { "id": "mr-r-est", "type": "XStack", "props": { "width": "100%", "alignItems": "center", "justifyContent": "space-between" }, "children": [
+                        { "id": "mr-tx-est", "type": "YStack", "props": { "gap": 8, "alignItems": "flex-start" }, "children": [
+                          { "id": "mr-t-est", "type": "Text", "props": { "color": "#000000", "content": "Established", "fontSize": 16, "fontFamily": "Georgia" } },
+                          { "id": "mr-s-est", "type": "Text", "props": { "color": "#baa289", "content": "A solid routine", "fontSize": 12 } }
+                        ] },
+                        { "id": "mr-e-est", "type": "YStack", "props": { "width": 24, "height": 24, "borderColor": "#e5e5e5", "borderWidth": 2, "borderRadius": 12, "backgroundColor": "#FFFFFF" }, "children": [] }
+                      ] }
+                    ]
+                  }
+                ]
+              },
+              { "id": "mr-spy", "type": "YStack", "props": { "flex": 1, "width": "100%" }, "children": [] },
+              {
+                "id": "mr-btn",
                 "type": "Button",
                 "props": { "color": "#FFFFFF", "label": "Continue", "width": "100%", "actions": ["continue"], "variant": "filled", "fontSize": 16, "textAlign": "center", "fontFamily": "Georgia", "fontWeight": "700", "borderRadius": 16, "backgroundColor": "#000000", "paddingVertical": 16, "paddingHorizontal": 24, "backgroundGradient": { "to": "bottom", "from": "top", "type": "linear", "stops": [ { "color": "#515151", "position": 0 }, { "color": "#000000", "position": 1 } ] } }
               },
-              { "id": "wk-spb", "type": "YStack", "props": { "width": "100%", "height": 12 }, "children": [] }
+              { "id": "mr-spb", "type": "YStack", "props": { "width": "100%", "height": 12 }, "children": [] }
             ]
           }
         ]
       }
     ]
   },
-  "figmaUrl": "https://www.figma.com/design/t8RgAyKbdSS0P8jM3RIoN3/That-Girl?node-id=1301-857",
+  "figmaUrl": "https://www.figma.com/design/t8RgAyKbdSS0P8jM3RIoN3/That-Girl?node-id=1301-898",
   "nextStep": null,
   "customPayload": null,
   "continueButtonLabel": "Continue",
