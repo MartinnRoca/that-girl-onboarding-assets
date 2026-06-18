@@ -1,0 +1,469 @@
+{
+ "id": "q-screen-time-before-bed",
+ "name": "Screen time before bed",
+ "type": "ComposableScreen",
+ "payload": {
+  "elements": [
+   {
+    "id": "st-sa",
+    "type": "SafeAreaView",
+    "props": {
+     "flex": 1,
+     "edges": [
+      "bottom"
+     ],
+     "backgroundColor": "#fff6f0"
+    },
+    "children": [
+     {
+      "id": "st-root",
+      "type": "YStack",
+      "props": {
+       "flex": 1,
+       "width": "100%",
+       "alignItems": "center",
+       "paddingHorizontal": 24
+      },
+      "children": [
+       {
+        "id": "st-spt",
+        "type": "YStack",
+        "props": {
+         "width": "100%",
+         "height": 60
+        },
+        "children": []
+       },
+       {
+        "id": "st-hdr",
+        "type": "XStack",
+        "props": {
+         "gap": 16,
+         "width": "100%",
+         "alignItems": "center"
+        },
+        "children": [
+         {
+          "id": "st-back",
+          "type": "YStack",
+          "props": {
+           "width": 40,
+           "height": 40,
+           "alignItems": "center",
+           "borderColor": "#e5e5e5",
+           "borderWidth": 1,
+           "borderRadius": 40,
+           "justifyContent": "center",
+           "backgroundColor": "#FFFFFF"
+          },
+          "children": [
+           {
+            "id": "st-bk",
+            "type": "Text",
+            "props": {
+             "color": "#000000",
+             "content": "‹",
+             "fontSize": 15,
+             "fontFamily": "Georgia"
+            }
+           }
+          ]
+         },
+         {
+          "id": "st-track",
+          "type": "YStack",
+          "props": {
+           "flex": 1,
+           "height": 6,
+           "borderRadius": 23,
+           "justifyContent": "flex-start",
+           "backgroundColor": "#FFFFFF"
+          },
+          "children": [
+           {
+            "id": "st-fill",
+            "type": "YStack",
+            "props": {
+             "width": "8%",
+             "height": 6,
+             "borderRadius": 23,
+             "backgroundColor": "#c7b4a2"
+            },
+            "children": []
+           }
+          ]
+         }
+        ]
+       },
+       {
+        "id": "st-sp1",
+        "type": "YStack",
+        "props": {
+         "width": "100%",
+         "height": 28
+        },
+        "children": []
+       },
+       {
+        "id": "st-tb",
+        "type": "YStack",
+        "props": {
+         "width": "100%",
+         "alignItems": "flex-start"
+        },
+        "children": [
+         {
+          "id": "st-title",
+          "type": "Text",
+          "props": {
+           "color": "#000000",
+           "width": "100%",
+           "content": "How much screen time before bed?",
+           "fontSize": 24,
+           "fontFamily": "Georgia",
+           "lineHeight": 30
+          }
+         }
+        ]
+       },
+       {
+        "id": "st-sp2",
+        "type": "YStack",
+        "props": {
+         "width": "100%",
+         "height": 24
+        },
+        "children": []
+       },
+       {
+        "id": "st-opts",
+        "type": "YStack",
+        "props": {
+         "gap": 16,
+         "width": "100%"
+        },
+        "children": [
+         {
+          "id": "st-c-lt30",
+          "type": "YStack",
+          "props": {
+           "width": "100%",
+           "onPress": [
+            {
+             "name": "screenTime",
+             "type": "setVariable",
+             "label": "Less than 30 min",
+             "value": "lt30"
+            },
+            "continue"
+           ],
+           "elevation": 3,
+           "shadowColor": "#000000",
+           "borderRadius": 18,
+           "shadowOffset": {
+            "width": 0,
+            "height": 0
+           },
+           "shadowRadius": 15,
+           "shadowOpacity": 0.1,
+           "backgroundColor": "#FFFFFF",
+           "paddingVertical": 16,
+           "paddingHorizontal": 24
+          },
+          "children": [
+           {
+            "id": "st-r-lt30",
+            "type": "XStack",
+            "props": {
+             "width": "100%",
+             "alignItems": "center",
+             "justifyContent": "space-between"
+            },
+            "children": [
+             {
+              "id": "st-t-lt30",
+              "type": "Text",
+              "props": {
+               "color": "#000000",
+               "content": "Less than 30 min",
+               "fontSize": 16,
+               "fontFamily": "Georgia"
+              }
+             },
+             {
+              "id": "st-e-lt30",
+              "type": "YStack",
+              "props": {
+               "width": 24,
+               "height": 24,
+               "borderColor": "#e5e5e5",
+               "borderWidth": 2,
+               "borderRadius": 12,
+               "backgroundColor": "#FFFFFF"
+              },
+              "children": []
+             }
+            ]
+           }
+          ]
+         },
+         {
+          "id": "st-c-30to60",
+          "type": "YStack",
+          "props": {
+           "width": "100%",
+           "onPress": [
+            {
+             "name": "screenTime",
+             "type": "setVariable",
+             "label": "30 min - 1 hours",
+             "value": "30to60"
+            },
+            "continue"
+           ],
+           "elevation": 3,
+           "shadowColor": "#000000",
+           "borderRadius": 18,
+           "shadowOffset": {
+            "width": 0,
+            "height": 0
+           },
+           "shadowRadius": 15,
+           "shadowOpacity": 0.1,
+           "backgroundColor": "#FFFFFF",
+           "paddingVertical": 16,
+           "paddingHorizontal": 24
+          },
+          "children": [
+           {
+            "id": "st-r-30to60",
+            "type": "XStack",
+            "props": {
+             "width": "100%",
+             "alignItems": "center",
+             "justifyContent": "space-between"
+            },
+            "children": [
+             {
+              "id": "st-t-30to60",
+              "type": "Text",
+              "props": {
+               "color": "#000000",
+               "content": "30 min - 1 hours",
+               "fontSize": 16,
+               "fontFamily": "Georgia"
+              }
+             },
+             {
+              "id": "st-e-30to60",
+              "type": "YStack",
+              "props": {
+               "width": 24,
+               "height": 24,
+               "borderColor": "#e5e5e5",
+               "borderWidth": 2,
+               "borderRadius": 12,
+               "backgroundColor": "#FFFFFF"
+              },
+              "children": []
+             }
+            ]
+           }
+          ]
+         },
+         {
+          "id": "st-c-1to2",
+          "type": "YStack",
+          "props": {
+           "width": "100%",
+           "onPress": [
+            {
+             "name": "screenTime",
+             "type": "setVariable",
+             "label": "1 - 2 hours",
+             "value": "1to2"
+            },
+            "continue"
+           ],
+           "elevation": 3,
+           "shadowColor": "#000000",
+           "borderRadius": 18,
+           "shadowOffset": {
+            "width": 0,
+            "height": 0
+           },
+           "shadowRadius": 15,
+           "shadowOpacity": 0.1,
+           "backgroundColor": "#FFFFFF",
+           "paddingVertical": 16,
+           "paddingHorizontal": 24
+          },
+          "children": [
+           {
+            "id": "st-r-1to2",
+            "type": "XStack",
+            "props": {
+             "width": "100%",
+             "alignItems": "center",
+             "justifyContent": "space-between"
+            },
+            "children": [
+             {
+              "id": "st-t-1to2",
+              "type": "Text",
+              "props": {
+               "color": "#000000",
+               "content": "1 - 2 hours",
+               "fontSize": 16,
+               "fontFamily": "Georgia"
+              }
+             },
+             {
+              "id": "st-e-1to2",
+              "type": "YStack",
+              "props": {
+               "width": 24,
+               "height": 24,
+               "borderColor": "#e5e5e5",
+               "borderWidth": 2,
+               "borderRadius": 12,
+               "backgroundColor": "#FFFFFF"
+              },
+              "children": []
+             }
+            ]
+           }
+          ]
+         },
+         {
+          "id": "st-c-gt2",
+          "type": "YStack",
+          "props": {
+           "width": "100%",
+           "onPress": [
+            {
+             "name": "screenTime",
+             "type": "setVariable",
+             "label": "More than 2 hours",
+             "value": "gt2"
+            },
+            "continue"
+           ],
+           "elevation": 3,
+           "shadowColor": "#000000",
+           "borderRadius": 18,
+           "shadowOffset": {
+            "width": 0,
+            "height": 0
+           },
+           "shadowRadius": 15,
+           "shadowOpacity": 0.1,
+           "backgroundColor": "#FFFFFF",
+           "paddingVertical": 16,
+           "paddingHorizontal": 24
+          },
+          "children": [
+           {
+            "id": "st-r-gt2",
+            "type": "XStack",
+            "props": {
+             "width": "100%",
+             "alignItems": "center",
+             "justifyContent": "space-between"
+            },
+            "children": [
+             {
+              "id": "st-t-gt2",
+              "type": "Text",
+              "props": {
+               "color": "#000000",
+               "content": "More than 2 hours",
+               "fontSize": 16,
+               "fontFamily": "Georgia"
+              }
+             },
+             {
+              "id": "st-e-gt2",
+              "type": "YStack",
+              "props": {
+               "width": 24,
+               "height": 24,
+               "borderColor": "#e5e5e5",
+               "borderWidth": 2,
+               "borderRadius": 12,
+               "backgroundColor": "#FFFFFF"
+              },
+              "children": []
+             }
+            ]
+           }
+          ]
+         }
+        ]
+       },
+       {
+        "id": "st-spy",
+        "type": "YStack",
+        "props": {
+         "flex": 1,
+         "width": "100%"
+        },
+        "children": []
+       },
+       {
+        "id": "st-btn",
+        "type": "Button",
+        "props": {
+         "color": "#FFFFFF",
+         "label": "Continue",
+         "width": "100%",
+         "actions": [
+          "continue"
+         ],
+         "variant": "filled",
+         "fontSize": 16,
+         "textAlign": "center",
+         "fontFamily": "Georgia",
+         "fontWeight": "700",
+         "borderRadius": 16,
+         "backgroundColor": "#000000",
+         "paddingVertical": 16,
+         "paddingHorizontal": 24,
+         "backgroundGradient": {
+          "to": "bottom",
+          "from": "top",
+          "type": "linear",
+          "stops": [
+           {
+            "color": "#515151",
+            "position": 0
+           },
+           {
+            "color": "#000000",
+            "position": 1
+           }
+          ]
+         }
+        }
+       },
+       {
+        "id": "st-spb",
+        "type": "YStack",
+        "props": {
+         "width": "100%",
+         "height": 12
+        },
+        "children": []
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ "figmaUrl": "https://www.figma.com/design/t8RgAyKbdSS0P8jM3RIoN3/That-Girl?node-id=1251-1308",
+ "nextStep": null,
+ "customPayload": null,
+ "continueButtonLabel": "Continue",
+ "displayProgressHeader": false
+}

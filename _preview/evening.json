@@ -1,0 +1,928 @@
+{
+ "id": "q-evening-activities",
+ "name": "Evening activities",
+ "type": "ComposableScreen",
+ "payload": {
+  "elements": [
+   {
+    "id": "ev-sa",
+    "type": "SafeAreaView",
+    "props": {
+     "flex": 1,
+     "edges": [
+      "bottom"
+     ],
+     "backgroundColor": "#fff6f0"
+    },
+    "children": [
+     {
+      "id": "ev-root",
+      "type": "YStack",
+      "props": {
+       "flex": 1,
+       "width": "100%",
+       "alignItems": "center",
+       "paddingHorizontal": 24
+      },
+      "children": [
+       {
+        "id": "ev-spt",
+        "type": "YStack",
+        "props": {
+         "width": "100%",
+         "height": 60
+        },
+        "children": []
+       },
+       {
+        "id": "ev-hdr",
+        "type": "XStack",
+        "props": {
+         "gap": 16,
+         "width": "100%",
+         "alignItems": "center"
+        },
+        "children": [
+         {
+          "id": "ev-back",
+          "type": "YStack",
+          "props": {
+           "width": 40,
+           "height": 40,
+           "alignItems": "center",
+           "borderColor": "#e5e5e5",
+           "borderWidth": 1,
+           "borderRadius": 40,
+           "justifyContent": "center",
+           "backgroundColor": "#FFFFFF"
+          },
+          "children": [
+           {
+            "id": "ev-bk",
+            "type": "Text",
+            "props": {
+             "color": "#000000",
+             "content": "‹",
+             "fontSize": 15,
+             "fontFamily": "Georgia"
+            }
+           }
+          ]
+         },
+         {
+          "id": "ev-track",
+          "type": "YStack",
+          "props": {
+           "flex": 1,
+           "height": 6,
+           "borderRadius": 23,
+           "justifyContent": "flex-start",
+           "backgroundColor": "#FFFFFF"
+          },
+          "children": [
+           {
+            "id": "ev-fill",
+            "type": "YStack",
+            "props": {
+             "width": "8%",
+             "height": 6,
+             "borderRadius": 23,
+             "backgroundColor": "#c7b4a2"
+            },
+            "children": []
+           }
+          ]
+         }
+        ]
+       },
+       {
+        "id": "ev-sp1",
+        "type": "YStack",
+        "props": {
+         "width": "100%",
+         "height": 28
+        },
+        "children": []
+       },
+       {
+        "id": "ev-tb",
+        "type": "YStack",
+        "props": {
+         "gap": 8,
+         "width": "100%",
+         "alignItems": "flex-start"
+        },
+        "children": [
+         {
+          "id": "ev-title",
+          "type": "Text",
+          "props": {
+           "color": "#000000",
+           "width": "100%",
+           "content": "Which evening activities interest you?",
+           "fontSize": 24,
+           "fontFamily": "Georgia",
+           "lineHeight": 30
+          }
+         },
+         {
+          "id": "ev-sub",
+          "type": "Text",
+          "props": {
+           "color": "#585858",
+           "width": "100%",
+           "content": "These will help you reduce screen time naturally",
+           "fontSize": 15
+          }
+         }
+        ]
+       },
+       {
+        "id": "ev-sp2",
+        "type": "YStack",
+        "props": {
+         "width": "100%",
+         "height": 24
+        },
+        "children": []
+       },
+       {
+        "id": "ev-grid",
+        "type": "YStack",
+        "props": {
+         "gap": 8,
+         "width": "100%"
+        },
+        "children": [
+         {
+          "id": "ev-row0",
+          "type": "XStack",
+          "props": {
+           "width": "100%",
+           "justifyContent": "space-between",
+           "alignItems": "center"
+          },
+          "children": [
+           {
+            "id": "ev-tile-screenfree",
+            "type": "YStack",
+            "props": {
+             "width": 110,
+             "height": 100,
+             "gap": 10,
+             "alignItems": "center",
+             "justifyContent": "center",
+             "borderRadius": 8,
+             "backgroundColor": "#FFFFFF",
+             "overflow": "hidden",
+             "elevation": 2,
+             "shadowColor": "#000000",
+             "shadowOffset": {
+              "width": 0,
+              "height": 0
+             },
+             "shadowRadius": 15,
+             "shadowOpacity": 0.1,
+             "paddingHorizontal": 6,
+             "onPress": [
+              {
+               "name": "eveningActivities",
+               "type": "setVariable",
+               "value": "screenfree",
+               "label": "Screen-Free",
+               "arrayOp": "toggle"
+              }
+             ]
+            },
+            "children": [
+             {
+              "id": "ev-img-screenfree",
+              "type": "Image",
+              "props": {
+               "url": "https://raw.githubusercontent.com/MartinnRoca/that-girl-onboarding-assets/main/act-hydrate.png",
+               "width": 62,
+               "height": 48,
+               "resizeMode": "contain"
+              }
+             },
+             {
+              "id": "ev-lbl-screenfree",
+              "type": "Text",
+              "props": {
+               "color": "#000000",
+               "content": "Screen-Free",
+               "fontSize": 14,
+               "fontFamily": "Georgia",
+               "textAlign": "center"
+              }
+             }
+            ]
+           },
+           {
+            "id": "ev-tile-skincare1",
+            "type": "YStack",
+            "props": {
+             "width": 110,
+             "height": 100,
+             "gap": 10,
+             "alignItems": "center",
+             "justifyContent": "center",
+             "borderRadius": 8,
+             "backgroundColor": "#FFFFFF",
+             "overflow": "hidden",
+             "elevation": 2,
+             "shadowColor": "#000000",
+             "shadowOffset": {
+              "width": 0,
+              "height": 0
+             },
+             "shadowRadius": 15,
+             "shadowOpacity": 0.1,
+             "paddingHorizontal": 6,
+             "onPress": [
+              {
+               "name": "eveningActivities",
+               "type": "setVariable",
+               "value": "skincare1",
+               "label": "Skincare",
+               "arrayOp": "toggle"
+              }
+             ]
+            },
+            "children": [
+             {
+              "id": "ev-img-skincare1",
+              "type": "Image",
+              "props": {
+               "url": "https://raw.githubusercontent.com/MartinnRoca/that-girl-onboarding-assets/main/act-skincare.png",
+               "width": 62,
+               "height": 48,
+               "resizeMode": "contain"
+              }
+             },
+             {
+              "id": "ev-lbl-skincare1",
+              "type": "Text",
+              "props": {
+               "color": "#000000",
+               "content": "Skincare",
+               "fontSize": 14,
+               "fontFamily": "Georgia",
+               "textAlign": "center"
+              }
+             }
+            ]
+           },
+           {
+            "id": "ev-tile-reading",
+            "type": "YStack",
+            "props": {
+             "width": 110,
+             "height": 100,
+             "gap": 10,
+             "alignItems": "center",
+             "justifyContent": "center",
+             "borderRadius": 8,
+             "backgroundColor": "#FFFFFF",
+             "overflow": "hidden",
+             "elevation": 2,
+             "shadowColor": "#000000",
+             "shadowOffset": {
+              "width": 0,
+              "height": 0
+             },
+             "shadowRadius": 15,
+             "shadowOpacity": 0.1,
+             "paddingHorizontal": 6,
+             "onPress": [
+              {
+               "name": "eveningActivities",
+               "type": "setVariable",
+               "value": "reading",
+               "label": "Reading",
+               "arrayOp": "toggle"
+              }
+             ]
+            },
+            "children": [
+             {
+              "id": "ev-img-reading",
+              "type": "Image",
+              "props": {
+               "url": "https://raw.githubusercontent.com/MartinnRoca/that-girl-onboarding-assets/main/act-stretching.png",
+               "width": 62,
+               "height": 48,
+               "resizeMode": "contain"
+              }
+             },
+             {
+              "id": "ev-lbl-reading",
+              "type": "Text",
+              "props": {
+               "color": "#000000",
+               "content": "Reading",
+               "fontSize": 14,
+               "fontFamily": "Georgia",
+               "textAlign": "center"
+              }
+             }
+            ]
+           }
+          ]
+         },
+         {
+          "id": "ev-row1",
+          "type": "XStack",
+          "props": {
+           "width": "100%",
+           "justifyContent": "space-between",
+           "alignItems": "center"
+          },
+          "children": [
+           {
+            "id": "ev-tile-reflection",
+            "type": "YStack",
+            "props": {
+             "width": 110,
+             "height": 100,
+             "gap": 10,
+             "alignItems": "center",
+             "justifyContent": "center",
+             "borderRadius": 8,
+             "backgroundColor": "#FFFFFF",
+             "overflow": "hidden",
+             "elevation": 2,
+             "shadowColor": "#000000",
+             "shadowOffset": {
+              "width": 0,
+              "height": 0
+             },
+             "shadowRadius": 15,
+             "shadowOpacity": 0.1,
+             "paddingHorizontal": 6,
+             "onPress": [
+              {
+               "name": "eveningActivities",
+               "type": "setVariable",
+               "value": "reflection",
+               "label": "Reflection",
+               "arrayOp": "toggle"
+              }
+             ]
+            },
+            "children": [
+             {
+              "id": "ev-img-reflection",
+              "type": "Image",
+              "props": {
+               "url": "https://raw.githubusercontent.com/MartinnRoca/that-girl-onboarding-assets/main/act-workout.png",
+               "width": 62,
+               "height": 48,
+               "resizeMode": "contain"
+              }
+             },
+             {
+              "id": "ev-lbl-reflection",
+              "type": "Text",
+              "props": {
+               "color": "#000000",
+               "content": "Reflection",
+               "fontSize": 14,
+               "fontFamily": "Georgia",
+               "textAlign": "center"
+              }
+             }
+            ]
+           },
+           {
+            "id": "ev-tile-herbaltea",
+            "type": "YStack",
+            "props": {
+             "width": 110,
+             "height": 100,
+             "gap": 10,
+             "alignItems": "center",
+             "justifyContent": "center",
+             "borderRadius": 8,
+             "backgroundColor": "#FFFFFF",
+             "overflow": "hidden",
+             "elevation": 2,
+             "shadowColor": "#000000",
+             "shadowOffset": {
+              "width": 0,
+              "height": 0
+             },
+             "shadowRadius": 15,
+             "shadowOpacity": 0.1,
+             "paddingHorizontal": 6,
+             "onPress": [
+              {
+               "name": "eveningActivities",
+               "type": "setVariable",
+               "value": "herbaltea",
+               "label": "Herbal Tea",
+               "arrayOp": "toggle"
+              }
+             ]
+            },
+            "children": [
+             {
+              "id": "ev-img-herbaltea",
+              "type": "Image",
+              "props": {
+               "url": "https://raw.githubusercontent.com/MartinnRoca/that-girl-onboarding-assets/main/act-journaling.png",
+               "width": 62,
+               "height": 48,
+               "resizeMode": "contain"
+              }
+             },
+             {
+              "id": "ev-lbl-herbaltea",
+              "type": "Text",
+              "props": {
+               "color": "#000000",
+               "content": "Herbal Tea",
+               "fontSize": 14,
+               "fontFamily": "Georgia",
+               "textAlign": "center"
+              }
+             }
+            ]
+           },
+           {
+            "id": "ev-tile-meditation",
+            "type": "YStack",
+            "props": {
+             "width": 110,
+             "height": 100,
+             "gap": 10,
+             "alignItems": "center",
+             "justifyContent": "center",
+             "borderRadius": 8,
+             "backgroundColor": "#FFFFFF",
+             "overflow": "hidden",
+             "elevation": 2,
+             "shadowColor": "#000000",
+             "shadowOffset": {
+              "width": 0,
+              "height": 0
+             },
+             "shadowRadius": 15,
+             "shadowOpacity": 0.1,
+             "paddingHorizontal": 6,
+             "onPress": [
+              {
+               "name": "eveningActivities",
+               "type": "setVariable",
+               "value": "meditation",
+               "label": "Meditation",
+               "arrayOp": "toggle"
+              }
+             ]
+            },
+            "children": [
+             {
+              "id": "ev-img-meditation",
+              "type": "Image",
+              "props": {
+               "url": "https://raw.githubusercontent.com/MartinnRoca/that-girl-onboarding-assets/main/act-breakfast.png",
+               "width": 62,
+               "height": 48,
+               "resizeMode": "contain"
+              }
+             },
+             {
+              "id": "ev-lbl-meditation",
+              "type": "Text",
+              "props": {
+               "color": "#000000",
+               "content": "Meditation",
+               "fontSize": 14,
+               "fontFamily": "Georgia",
+               "textAlign": "center"
+              }
+             }
+            ]
+           }
+          ]
+         },
+         {
+          "id": "ev-row2",
+          "type": "XStack",
+          "props": {
+           "width": "100%",
+           "justifyContent": "space-between",
+           "alignItems": "center"
+          },
+          "children": [
+           {
+            "id": "ev-tile-meditate",
+            "type": "YStack",
+            "props": {
+             "width": 110,
+             "height": 100,
+             "gap": 10,
+             "alignItems": "center",
+             "justifyContent": "center",
+             "borderRadius": 8,
+             "backgroundColor": "#FFFFFF",
+             "overflow": "hidden",
+             "elevation": 2,
+             "shadowColor": "#000000",
+             "shadowOffset": {
+              "width": 0,
+              "height": 0
+             },
+             "shadowRadius": 15,
+             "shadowOpacity": 0.1,
+             "paddingHorizontal": 6,
+             "onPress": [
+              {
+               "name": "eveningActivities",
+               "type": "setVariable",
+               "value": "meditate",
+               "label": "Meditate",
+               "arrayOp": "toggle"
+              }
+             ]
+            },
+            "children": [
+             {
+              "id": "ev-img-meditate",
+              "type": "Image",
+              "props": {
+               "url": "https://raw.githubusercontent.com/MartinnRoca/that-girl-onboarding-assets/main/act-meditate.png",
+               "width": 62,
+               "height": 48,
+               "resizeMode": "contain"
+              }
+             },
+             {
+              "id": "ev-lbl-meditate",
+              "type": "Text",
+              "props": {
+               "color": "#000000",
+               "content": "Meditate",
+               "fontSize": 14,
+               "fontFamily": "Georgia",
+               "textAlign": "center"
+              }
+             }
+            ]
+           },
+           {
+            "id": "ev-tile-preptomorrow",
+            "type": "YStack",
+            "props": {
+             "width": 110,
+             "height": 100,
+             "gap": 10,
+             "alignItems": "center",
+             "justifyContent": "center",
+             "borderRadius": 8,
+             "backgroundColor": "#FFFFFF",
+             "overflow": "hidden",
+             "elevation": 2,
+             "shadowColor": "#000000",
+             "shadowOffset": {
+              "width": 0,
+              "height": 0
+             },
+             "shadowRadius": 15,
+             "shadowOpacity": 0.1,
+             "paddingHorizontal": 6,
+             "onPress": [
+              {
+               "name": "eveningActivities",
+               "type": "setVariable",
+               "value": "preptomorrow",
+               "label": "Prep Tomorrow",
+               "arrayOp": "toggle"
+              }
+             ]
+            },
+            "children": [
+             {
+              "id": "ev-img-preptomorrow",
+              "type": "Image",
+              "props": {
+               "url": "https://raw.githubusercontent.com/MartinnRoca/that-girl-onboarding-assets/main/act-planday.png",
+               "width": 62,
+               "height": 48,
+               "resizeMode": "contain"
+              }
+             },
+             {
+              "id": "ev-lbl-preptomorrow",
+              "type": "Text",
+              "props": {
+               "color": "#000000",
+               "content": "Prep Tomorrow",
+               "fontSize": 14,
+               "fontFamily": "Georgia",
+               "textAlign": "center"
+              }
+             }
+            ]
+           },
+           {
+            "id": "ev-tile-gratitude",
+            "type": "YStack",
+            "props": {
+             "width": 110,
+             "height": 100,
+             "gap": 10,
+             "alignItems": "center",
+             "justifyContent": "center",
+             "borderRadius": 8,
+             "backgroundColor": "#FFFFFF",
+             "overflow": "hidden",
+             "elevation": 2,
+             "shadowColor": "#000000",
+             "shadowOffset": {
+              "width": 0,
+              "height": 0
+             },
+             "shadowRadius": 15,
+             "shadowOpacity": 0.1,
+             "paddingHorizontal": 6,
+             "onPress": [
+              {
+               "name": "eveningActivities",
+               "type": "setVariable",
+               "value": "gratitude",
+               "label": "Gratitude",
+               "arrayOp": "toggle"
+              }
+             ]
+            },
+            "children": [
+             {
+              "id": "ev-img-gratitude",
+              "type": "Image",
+              "props": {
+               "url": "https://raw.githubusercontent.com/MartinnRoca/that-girl-onboarding-assets/main/act-makebed.png",
+               "width": 62,
+               "height": 48,
+               "resizeMode": "contain"
+              }
+             },
+             {
+              "id": "ev-lbl-gratitude",
+              "type": "Text",
+              "props": {
+               "color": "#000000",
+               "content": "Gratitude",
+               "fontSize": 14,
+               "fontFamily": "Georgia",
+               "textAlign": "center"
+              }
+             }
+            ]
+           }
+          ]
+         },
+         {
+          "id": "ev-row3",
+          "type": "XStack",
+          "props": {
+           "width": "100%",
+           "justifyContent": "space-between",
+           "alignItems": "center"
+          },
+          "children": [
+           {
+            "id": "ev-tile-outfit",
+            "type": "YStack",
+            "props": {
+             "width": 110,
+             "height": 100,
+             "gap": 10,
+             "alignItems": "center",
+             "justifyContent": "center",
+             "borderRadius": 8,
+             "backgroundColor": "#FFFFFF",
+             "overflow": "hidden",
+             "elevation": 2,
+             "shadowColor": "#000000",
+             "shadowOffset": {
+              "width": 0,
+              "height": 0
+             },
+             "shadowRadius": 15,
+             "shadowOpacity": 0.1,
+             "paddingHorizontal": 6,
+             "onPress": [
+              {
+               "name": "eveningActivities",
+               "type": "setVariable",
+               "value": "outfit",
+               "label": "Outfit Planning",
+               "arrayOp": "toggle"
+              }
+             ]
+            },
+            "children": [
+             {
+              "id": "ev-img-outfit",
+              "type": "Image",
+              "props": {
+               "url": "https://raw.githubusercontent.com/MartinnRoca/that-girl-onboarding-assets/main/act-music.png",
+               "width": 62,
+               "height": 48,
+               "resizeMode": "contain"
+              }
+             },
+             {
+              "id": "ev-lbl-outfit",
+              "type": "Text",
+              "props": {
+               "color": "#000000",
+               "content": "Outfit Planning",
+               "fontSize": 14,
+               "fontFamily": "Georgia",
+               "textAlign": "center"
+              }
+             }
+            ]
+           },
+           {
+            "id": "ev-tile-stretching",
+            "type": "YStack",
+            "props": {
+             "width": 110,
+             "height": 100,
+             "gap": 10,
+             "alignItems": "center",
+             "justifyContent": "center",
+             "borderRadius": 8,
+             "backgroundColor": "#FFFFFF",
+             "overflow": "hidden",
+             "elevation": 2,
+             "shadowColor": "#000000",
+             "shadowOffset": {
+              "width": 0,
+              "height": 0
+             },
+             "shadowRadius": 15,
+             "shadowOpacity": 0.1,
+             "paddingHorizontal": 6,
+             "onPress": [
+              {
+               "name": "eveningActivities",
+               "type": "setVariable",
+               "value": "stretching",
+               "label": "Stretching",
+               "arrayOp": "toggle"
+              }
+             ]
+            },
+            "children": [
+             {
+              "id": "ev-img-stretching",
+              "type": "Image",
+              "props": {
+               "url": "https://raw.githubusercontent.com/MartinnRoca/that-girl-onboarding-assets/main/act-read.png",
+               "width": 62,
+               "height": 48,
+               "resizeMode": "contain"
+              }
+             },
+             {
+              "id": "ev-lbl-stretching",
+              "type": "Text",
+              "props": {
+               "color": "#000000",
+               "content": "Stretching",
+               "fontSize": 14,
+               "fontFamily": "Georgia",
+               "textAlign": "center"
+              }
+             }
+            ]
+           },
+           {
+            "id": "ev-tile-skincare2",
+            "type": "YStack",
+            "props": {
+             "width": 110,
+             "height": 100,
+             "gap": 10,
+             "alignItems": "center",
+             "justifyContent": "center",
+             "borderRadius": 8,
+             "backgroundColor": "#FFFFFF",
+             "overflow": "hidden",
+             "elevation": 2,
+             "shadowColor": "#000000",
+             "shadowOffset": {
+              "width": 0,
+              "height": 0
+             },
+             "shadowRadius": 15,
+             "shadowOpacity": 0.1,
+             "paddingHorizontal": 6,
+             "onPress": [
+              {
+               "name": "eveningActivities",
+               "type": "setVariable",
+               "value": "skincare2",
+               "label": "Skincare",
+               "arrayOp": "toggle"
+              }
+             ]
+            },
+            "children": [
+             {
+              "id": "ev-img-skincare2",
+              "type": "Image",
+              "props": {
+               "url": "https://raw.githubusercontent.com/MartinnRoca/that-girl-onboarding-assets/main/act-walk.png",
+               "width": 62,
+               "height": 48,
+               "resizeMode": "contain"
+              }
+             },
+             {
+              "id": "ev-lbl-skincare2",
+              "type": "Text",
+              "props": {
+               "color": "#000000",
+               "content": "Skincare",
+               "fontSize": 14,
+               "fontFamily": "Georgia",
+               "textAlign": "center"
+              }
+             }
+            ]
+           }
+          ]
+         }
+        ]
+       },
+       {
+        "id": "ev-spy",
+        "type": "YStack",
+        "props": {
+         "flex": 1,
+         "width": "100%"
+        },
+        "children": []
+       },
+       {
+        "id": "ev-btn",
+        "type": "Button",
+        "props": {
+         "color": "#FFFFFF",
+         "label": "Continue",
+         "width": "100%",
+         "actions": [
+          "continue"
+         ],
+         "variant": "filled",
+         "fontSize": 16,
+         "textAlign": "center",
+         "fontFamily": "Georgia",
+         "fontWeight": "700",
+         "borderRadius": 16,
+         "backgroundColor": "#000000",
+         "paddingVertical": 16,
+         "paddingHorizontal": 24,
+         "backgroundGradient": {
+          "to": "bottom",
+          "from": "top",
+          "type": "linear",
+          "stops": [
+           {
+            "color": "#515151",
+            "position": 0
+           },
+           {
+            "color": "#000000",
+            "position": 1
+           }
+          ]
+         }
+        }
+       },
+       {
+        "id": "ev-spb",
+        "type": "YStack",
+        "props": {
+         "width": "100%",
+         "height": 12
+        },
+        "children": []
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ "figmaUrl": "https://www.figma.com/design/t8RgAyKbdSS0P8jM3RIoN3/That-Girl?node-id=1251-2350",
+ "nextStep": null,
+ "customPayload": null,
+ "continueButtonLabel": "Continue",
+ "displayProgressHeader": false
+}
