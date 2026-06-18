@@ -1,105 +1,1576 @@
 {
-  "id": "q-morning-routine",
-  "name": "Morning routine",
-  "type": "ComposableScreen",
-  "payload": {
-    "elements": [
-      {
-        "id": "mr-sa",
-        "type": "SafeAreaView",
-        "props": { "flex": 1, "edges": ["bottom"], "backgroundColor": "#fff6f0" },
+ "id": "q-morning-activities",
+ "name": "Morning activities",
+ "type": "ComposableScreen",
+ "payload": {
+  "elements": [
+   {
+    "id": "ma-sa",
+    "type": "SafeAreaView",
+    "props": {
+     "flex": 1,
+     "edges": [
+      "bottom"
+     ],
+     "backgroundColor": "#fff6f0"
+    },
+    "children": [
+     {
+      "id": "ma-root",
+      "type": "YStack",
+      "props": {
+       "flex": 1,
+       "width": "100%",
+       "alignItems": "center",
+       "paddingHorizontal": 24
+      },
+      "children": [
+       {
+        "id": "ma-spt",
+        "type": "YStack",
+        "props": {
+         "width": "100%",
+         "height": 60
+        },
+        "children": []
+       },
+       {
+        "id": "ma-hdr",
+        "type": "XStack",
+        "props": {
+         "gap": 16,
+         "width": "100%",
+         "alignItems": "center"
+        },
         "children": [
-          {
-            "id": "mr-root",
+         {
+          "id": "ma-back",
+          "type": "YStack",
+          "props": {
+           "width": 40,
+           "height": 40,
+           "alignItems": "center",
+           "borderColor": "#e5e5e5",
+           "borderWidth": 1,
+           "borderRadius": 40,
+           "justifyContent": "center",
+           "backgroundColor": "#FFFFFF"
+          },
+          "children": [
+           {
+            "id": "ma-bk",
+            "type": "Text",
+            "props": {
+             "color": "#000000",
+             "content": "‹",
+             "fontSize": 15,
+             "fontFamily": "Georgia"
+            }
+           }
+          ]
+         },
+         {
+          "id": "ma-track",
+          "type": "YStack",
+          "props": {
+           "flex": 1,
+           "height": 6,
+           "borderRadius": 23,
+           "justifyContent": "flex-start",
+           "backgroundColor": "#FFFFFF"
+          },
+          "children": [
+           {
+            "id": "ma-fill",
             "type": "YStack",
-            "props": { "flex": 1, "width": "100%", "alignItems": "center", "paddingHorizontal": 24 },
-            "children": [
-              { "id": "mr-spt", "type": "YStack", "props": { "width": "100%", "height": 60 }, "children": [] },
-              {
-                "id": "mr-hdr",
-                "type": "XStack",
-                "props": { "gap": 16, "width": "100%", "alignItems": "center" },
-                "children": [
-                  { "id": "mr-back", "type": "YStack", "props": { "width": 40, "height": 40, "alignItems": "center", "borderColor": "#e5e5e5", "borderWidth": 1, "borderRadius": 40, "justifyContent": "center", "backgroundColor": "#FFFFFF" }, "children": [ { "id": "mr-bk", "type": "Text", "props": { "color": "#000000", "content": "‹", "fontSize": 15, "fontFamily": "Georgia" } } ] },
-                  { "id": "mr-track", "type": "YStack", "props": { "flex": 1, "height": 6, "borderRadius": 23, "justifyContent": "flex-start", "backgroundColor": "#FFFFFF" }, "children": [ { "id": "mr-fill", "type": "YStack", "props": { "width": "8%", "height": 6, "borderRadius": 23, "backgroundColor": "#c7b4a2" }, "children": [] } ] }
-                ]
-              },
-              { "id": "mr-sp1", "type": "YStack", "props": { "width": "100%", "height": 28 }, "children": [] },
-              {
-                "id": "mr-tb",
-                "type": "YStack",
-                "props": { "gap": 8, "width": "100%", "alignItems": "flex-start" },
-                "children": [
-                  { "id": "mr-title", "type": "Text", "props": { "color": "#000000", "width": "100%", "content": "Do you have a morning routine?", "fontSize": 24, "fontFamily": "Georgia", "lineHeight": 30 } },
-                  { "id": "mr-sub", "type": "Text", "props": { "color": "#585858", "width": "100%", "content": "A good morning set you up to build habits", "fontSize": 15 } }
-                ]
-              },
-              { "id": "mr-sp2", "type": "YStack", "props": { "width": "100%", "height": 24 }, "children": [] },
-              {
-                "id": "mr-opts",
-                "type": "YStack",
-                "props": { "gap": 12, "width": "100%" },
-                "children": [
-                  {
-                    "id": "mr-c-none",
-                    "type": "YStack",
-                    "props": { "width": "100%", "onPress": [ { "name": "morningRoutine", "type": "setVariable", "label": "None", "value": "none" }, "continue" ], "elevation": 3, "shadowColor": "#000000", "borderRadius": 18, "shadowOffset": { "width": 0, "height": 0 }, "shadowRadius": 15, "shadowOpacity": 0.1, "backgroundColor": "#FFFFFF", "paddingVertical": 16, "paddingHorizontal": 24 },
-                    "children": [
-                      { "id": "mr-r-none", "type": "XStack", "props": { "width": "100%", "alignItems": "center", "justifyContent": "space-between" }, "children": [
-                        { "id": "mr-tx-none", "type": "YStack", "props": { "gap": 8, "alignItems": "flex-start" }, "children": [
-                          { "id": "mr-t-none", "type": "Text", "props": { "color": "#000000", "content": "None", "fontSize": 16, "fontFamily": "Georgia" } },
-                          { "id": "mr-s-none", "type": "Text", "props": { "color": "#baa289", "content": "I don’t have one yet", "fontSize": 12 } }
-                        ] },
-                        { "id": "mr-e-none", "type": "YStack", "props": { "width": 24, "height": 24, "borderColor": "#e5e5e5", "borderWidth": 2, "borderRadius": 12, "backgroundColor": "#FFFFFF" }, "children": [] }
-                      ] }
-                    ]
-                  },
-                  {
-                    "id": "mr-c-basic",
-                    "type": "YStack",
-                    "props": { "width": "100%", "onPress": [ { "name": "morningRoutine", "type": "setVariable", "label": "Basic", "value": "basic" }, "continue" ], "elevation": 3, "shadowColor": "#000000", "borderRadius": 18, "shadowOffset": { "width": 0, "height": 0 }, "shadowRadius": 15, "shadowOpacity": 0.1, "backgroundColor": "#FFFFFF", "paddingVertical": 16, "paddingHorizontal": 24 },
-                    "children": [
-                      { "id": "mr-r-basic", "type": "XStack", "props": { "width": "100%", "alignItems": "center", "justifyContent": "space-between" }, "children": [
-                        { "id": "mr-tx-basic", "type": "YStack", "props": { "gap": 8, "alignItems": "flex-start" }, "children": [
-                          { "id": "mr-t-basic", "type": "Text", "props": { "color": "#000000", "content": "Basic", "fontSize": 16, "fontFamily": "Georgia" } },
-                          { "id": "mr-s-basic", "type": "Text", "props": { "color": "#baa289", "content": "A few simple habites", "fontSize": 12 } }
-                        ] },
-                        { "id": "mr-e-basic", "type": "YStack", "props": { "width": 24, "height": 24, "borderColor": "#e5e5e5", "borderWidth": 2, "borderRadius": 12, "backgroundColor": "#FFFFFF" }, "children": [] }
-                      ] }
-                    ]
-                  },
-                  {
-                    "id": "mr-c-est",
-                    "type": "YStack",
-                    "props": { "width": "100%", "onPress": [ { "name": "morningRoutine", "type": "setVariable", "label": "Established", "value": "established" }, "continue" ], "elevation": 3, "shadowColor": "#000000", "borderRadius": 18, "shadowOffset": { "width": 0, "height": 0 }, "shadowRadius": 15, "shadowOpacity": 0.1, "backgroundColor": "#FFFFFF", "paddingVertical": 16, "paddingHorizontal": 24 },
-                    "children": [
-                      { "id": "mr-r-est", "type": "XStack", "props": { "width": "100%", "alignItems": "center", "justifyContent": "space-between" }, "children": [
-                        { "id": "mr-tx-est", "type": "YStack", "props": { "gap": 8, "alignItems": "flex-start" }, "children": [
-                          { "id": "mr-t-est", "type": "Text", "props": { "color": "#000000", "content": "Established", "fontSize": 16, "fontFamily": "Georgia" } },
-                          { "id": "mr-s-est", "type": "Text", "props": { "color": "#baa289", "content": "A solid routine", "fontSize": 12 } }
-                        ] },
-                        { "id": "mr-e-est", "type": "YStack", "props": { "width": 24, "height": 24, "borderColor": "#e5e5e5", "borderWidth": 2, "borderRadius": 12, "backgroundColor": "#FFFFFF" }, "children": [] }
-                      ] }
-                    ]
-                  }
-                ]
-              },
-              { "id": "mr-spy", "type": "YStack", "props": { "flex": 1, "width": "100%" }, "children": [] },
-              {
-                "id": "mr-btn",
-                "type": "Button",
-                "props": { "color": "#FFFFFF", "label": "Continue", "width": "100%", "actions": ["continue"], "variant": "filled", "fontSize": 16, "textAlign": "center", "fontFamily": "Georgia", "fontWeight": "700", "borderRadius": 16, "backgroundColor": "#000000", "paddingVertical": 16, "paddingHorizontal": 24, "backgroundGradient": { "to": "bottom", "from": "top", "type": "linear", "stops": [ { "color": "#515151", "position": 0 }, { "color": "#000000", "position": 1 } ] } }
-              },
-              { "id": "mr-spb", "type": "YStack", "props": { "width": "100%", "height": 12 }, "children": [] }
-            ]
-          }
+            "props": {
+             "width": "8%",
+             "height": 6,
+             "borderRadius": 23,
+             "backgroundColor": "#c7b4a2"
+            },
+            "children": []
+           }
+          ]
+         }
         ]
-      }
+       },
+       {
+        "id": "ma-sp1",
+        "type": "YStack",
+        "props": {
+         "width": "100%",
+         "height": 28
+        },
+        "children": []
+       },
+       {
+        "id": "ma-tb",
+        "type": "YStack",
+        "props": {
+         "gap": 8,
+         "width": "100%",
+         "alignItems": "flex-start"
+        },
+        "children": [
+         {
+          "id": "ma-title",
+          "type": "Text",
+          "props": {
+           "color": "#000000",
+           "width": "100%",
+           "content": "Which morning activities interest you?",
+           "fontSize": 24,
+           "fontFamily": "Georgia",
+           "lineHeight": 30
+          }
+         },
+         {
+          "id": "ma-sub",
+          "type": "Text",
+          "props": {
+           "color": "#585858",
+           "width": "100%",
+           "content": "Pick at least 3 to customize your routine",
+           "fontSize": 15
+          }
+         }
+        ]
+       },
+       {
+        "id": "ma-sp2",
+        "type": "YStack",
+        "props": {
+         "width": "100%",
+         "height": 24
+        },
+        "children": []
+       },
+       {
+        "id": "ma-grid",
+        "type": "YStack",
+        "props": {
+         "gap": 8,
+         "width": "100%"
+        },
+        "children": [
+         {
+          "id": "ma-row0",
+          "type": "XStack",
+          "props": {
+           "width": "100%",
+           "justifyContent": "space-between",
+           "alignItems": "center"
+          },
+          "children": [
+           {
+            "id": "ma-tile-hydrate",
+            "type": "ZStack",
+            "props": {
+             "width": 110,
+             "height": 100,
+             "onPress": [
+              {
+               "name": "morningActivities",
+               "type": "setVariable",
+               "value": "hydrate",
+               "label": "Hydrate",
+               "arrayOp": "toggle"
+              }
+             ]
+            },
+            "children": [
+             {
+              "id": "ma-base-hydrate",
+              "type": "YStack",
+              "props": {
+               "width": 110,
+               "height": 100,
+               "gap": 10,
+               "alignItems": "center",
+               "justifyContent": "center",
+               "borderRadius": 8,
+               "backgroundColor": "#FFFFFF",
+               "overflow": "hidden",
+               "elevation": 2,
+               "shadowColor": "#000000",
+               "shadowOffset": {
+                "width": 0,
+                "height": 0
+               },
+               "shadowRadius": 15,
+               "shadowOpacity": 0.1,
+               "paddingHorizontal": 6
+              },
+              "children": [
+               {
+                "id": "ma-img-hydrate",
+                "type": "Image",
+                "props": {
+                 "url": "https://raw.githubusercontent.com/MartinnRoca/that-girl-onboarding-assets/main/act-hydrate.png",
+                 "width": 62,
+                 "height": 48,
+                 "resizeMode": "contain"
+                }
+               },
+               {
+                "id": "ma-lbl-hydrate",
+                "type": "Text",
+                "props": {
+                 "color": "#000000",
+                 "content": "Hydrate",
+                 "fontSize": 14,
+                 "fontFamily": "Georgia",
+                 "textAlign": "center"
+                }
+               }
+              ]
+             },
+             {
+              "id": "ma-sel-hydrate",
+              "type": "YStack",
+              "props": {
+               "width": 110,
+               "height": 100,
+               "borderRadius": 8,
+               "borderWidth": 2,
+               "borderColor": "#c7b4a2",
+               "alignItems": "flex-end",
+               "justifyContent": "flex-start",
+               "padding": 6,
+               "renderWhen": {
+                "variable": "morningActivities",
+                "operator": "contains",
+                "value": "hydrate"
+               }
+              },
+              "children": [
+               {
+                "id": "ma-badge-hydrate",
+                "type": "YStack",
+                "props": {
+                 "width": 20,
+                 "height": 20,
+                 "borderRadius": 20,
+                 "backgroundColor": "#67513bcc",
+                 "alignItems": "center",
+                 "justifyContent": "center"
+                },
+                "children": [
+                 {
+                  "id": "ma-chk-hydrate",
+                  "type": "Text",
+                  "props": {
+                   "color": "#FFFFFF",
+                   "content": "✓",
+                   "fontSize": 12
+                  }
+                 }
+                ]
+               }
+              ]
+             }
+            ]
+           },
+           {
+            "id": "ma-tile-skincare",
+            "type": "ZStack",
+            "props": {
+             "width": 110,
+             "height": 100,
+             "onPress": [
+              {
+               "name": "morningActivities",
+               "type": "setVariable",
+               "value": "skincare",
+               "label": "Skincare",
+               "arrayOp": "toggle"
+              }
+             ]
+            },
+            "children": [
+             {
+              "id": "ma-base-skincare",
+              "type": "YStack",
+              "props": {
+               "width": 110,
+               "height": 100,
+               "gap": 10,
+               "alignItems": "center",
+               "justifyContent": "center",
+               "borderRadius": 8,
+               "backgroundColor": "#FFFFFF",
+               "overflow": "hidden",
+               "elevation": 2,
+               "shadowColor": "#000000",
+               "shadowOffset": {
+                "width": 0,
+                "height": 0
+               },
+               "shadowRadius": 15,
+               "shadowOpacity": 0.1,
+               "paddingHorizontal": 6
+              },
+              "children": [
+               {
+                "id": "ma-img-skincare",
+                "type": "Image",
+                "props": {
+                 "url": "https://raw.githubusercontent.com/MartinnRoca/that-girl-onboarding-assets/main/act-skincare.png",
+                 "width": 62,
+                 "height": 48,
+                 "resizeMode": "contain"
+                }
+               },
+               {
+                "id": "ma-lbl-skincare",
+                "type": "Text",
+                "props": {
+                 "color": "#000000",
+                 "content": "Skincare",
+                 "fontSize": 14,
+                 "fontFamily": "Georgia",
+                 "textAlign": "center"
+                }
+               }
+              ]
+             },
+             {
+              "id": "ma-sel-skincare",
+              "type": "YStack",
+              "props": {
+               "width": 110,
+               "height": 100,
+               "borderRadius": 8,
+               "borderWidth": 2,
+               "borderColor": "#c7b4a2",
+               "alignItems": "flex-end",
+               "justifyContent": "flex-start",
+               "padding": 6,
+               "renderWhen": {
+                "variable": "morningActivities",
+                "operator": "contains",
+                "value": "skincare"
+               }
+              },
+              "children": [
+               {
+                "id": "ma-badge-skincare",
+                "type": "YStack",
+                "props": {
+                 "width": 20,
+                 "height": 20,
+                 "borderRadius": 20,
+                 "backgroundColor": "#67513bcc",
+                 "alignItems": "center",
+                 "justifyContent": "center"
+                },
+                "children": [
+                 {
+                  "id": "ma-chk-skincare",
+                  "type": "Text",
+                  "props": {
+                   "color": "#FFFFFF",
+                   "content": "✓",
+                   "fontSize": 12
+                  }
+                 }
+                ]
+               }
+              ]
+             }
+            ]
+           },
+           {
+            "id": "ma-tile-stretching",
+            "type": "ZStack",
+            "props": {
+             "width": 110,
+             "height": 100,
+             "onPress": [
+              {
+               "name": "morningActivities",
+               "type": "setVariable",
+               "value": "stretching",
+               "label": "Stretching",
+               "arrayOp": "toggle"
+              }
+             ]
+            },
+            "children": [
+             {
+              "id": "ma-base-stretching",
+              "type": "YStack",
+              "props": {
+               "width": 110,
+               "height": 100,
+               "gap": 10,
+               "alignItems": "center",
+               "justifyContent": "center",
+               "borderRadius": 8,
+               "backgroundColor": "#FFFFFF",
+               "overflow": "hidden",
+               "elevation": 2,
+               "shadowColor": "#000000",
+               "shadowOffset": {
+                "width": 0,
+                "height": 0
+               },
+               "shadowRadius": 15,
+               "shadowOpacity": 0.1,
+               "paddingHorizontal": 6
+              },
+              "children": [
+               {
+                "id": "ma-img-stretching",
+                "type": "Image",
+                "props": {
+                 "url": "https://raw.githubusercontent.com/MartinnRoca/that-girl-onboarding-assets/main/act-stretching.png",
+                 "width": 62,
+                 "height": 48,
+                 "resizeMode": "contain"
+                }
+               },
+               {
+                "id": "ma-lbl-stretching",
+                "type": "Text",
+                "props": {
+                 "color": "#000000",
+                 "content": "Stretching",
+                 "fontSize": 14,
+                 "fontFamily": "Georgia",
+                 "textAlign": "center"
+                }
+               }
+              ]
+             },
+             {
+              "id": "ma-sel-stretching",
+              "type": "YStack",
+              "props": {
+               "width": 110,
+               "height": 100,
+               "borderRadius": 8,
+               "borderWidth": 2,
+               "borderColor": "#c7b4a2",
+               "alignItems": "flex-end",
+               "justifyContent": "flex-start",
+               "padding": 6,
+               "renderWhen": {
+                "variable": "morningActivities",
+                "operator": "contains",
+                "value": "stretching"
+               }
+              },
+              "children": [
+               {
+                "id": "ma-badge-stretching",
+                "type": "YStack",
+                "props": {
+                 "width": 20,
+                 "height": 20,
+                 "borderRadius": 20,
+                 "backgroundColor": "#67513bcc",
+                 "alignItems": "center",
+                 "justifyContent": "center"
+                },
+                "children": [
+                 {
+                  "id": "ma-chk-stretching",
+                  "type": "Text",
+                  "props": {
+                   "color": "#FFFFFF",
+                   "content": "✓",
+                   "fontSize": 12
+                  }
+                 }
+                ]
+               }
+              ]
+             }
+            ]
+           }
+          ]
+         },
+         {
+          "id": "ma-row1",
+          "type": "XStack",
+          "props": {
+           "width": "100%",
+           "justifyContent": "space-between",
+           "alignItems": "center"
+          },
+          "children": [
+           {
+            "id": "ma-tile-workout",
+            "type": "ZStack",
+            "props": {
+             "width": 110,
+             "height": 100,
+             "onPress": [
+              {
+               "name": "morningActivities",
+               "type": "setVariable",
+               "value": "workout",
+               "label": "Workout",
+               "arrayOp": "toggle"
+              }
+             ]
+            },
+            "children": [
+             {
+              "id": "ma-base-workout",
+              "type": "YStack",
+              "props": {
+               "width": 110,
+               "height": 100,
+               "gap": 10,
+               "alignItems": "center",
+               "justifyContent": "center",
+               "borderRadius": 8,
+               "backgroundColor": "#FFFFFF",
+               "overflow": "hidden",
+               "elevation": 2,
+               "shadowColor": "#000000",
+               "shadowOffset": {
+                "width": 0,
+                "height": 0
+               },
+               "shadowRadius": 15,
+               "shadowOpacity": 0.1,
+               "paddingHorizontal": 6
+              },
+              "children": [
+               {
+                "id": "ma-img-workout",
+                "type": "Image",
+                "props": {
+                 "url": "https://raw.githubusercontent.com/MartinnRoca/that-girl-onboarding-assets/main/act-workout.png",
+                 "width": 62,
+                 "height": 48,
+                 "resizeMode": "contain"
+                }
+               },
+               {
+                "id": "ma-lbl-workout",
+                "type": "Text",
+                "props": {
+                 "color": "#000000",
+                 "content": "Workout",
+                 "fontSize": 14,
+                 "fontFamily": "Georgia",
+                 "textAlign": "center"
+                }
+               }
+              ]
+             },
+             {
+              "id": "ma-sel-workout",
+              "type": "YStack",
+              "props": {
+               "width": 110,
+               "height": 100,
+               "borderRadius": 8,
+               "borderWidth": 2,
+               "borderColor": "#c7b4a2",
+               "alignItems": "flex-end",
+               "justifyContent": "flex-start",
+               "padding": 6,
+               "renderWhen": {
+                "variable": "morningActivities",
+                "operator": "contains",
+                "value": "workout"
+               }
+              },
+              "children": [
+               {
+                "id": "ma-badge-workout",
+                "type": "YStack",
+                "props": {
+                 "width": 20,
+                 "height": 20,
+                 "borderRadius": 20,
+                 "backgroundColor": "#67513bcc",
+                 "alignItems": "center",
+                 "justifyContent": "center"
+                },
+                "children": [
+                 {
+                  "id": "ma-chk-workout",
+                  "type": "Text",
+                  "props": {
+                   "color": "#FFFFFF",
+                   "content": "✓",
+                   "fontSize": 12
+                  }
+                 }
+                ]
+               }
+              ]
+             }
+            ]
+           },
+           {
+            "id": "ma-tile-journaling",
+            "type": "ZStack",
+            "props": {
+             "width": 110,
+             "height": 100,
+             "onPress": [
+              {
+               "name": "morningActivities",
+               "type": "setVariable",
+               "value": "journaling",
+               "label": "Journaling",
+               "arrayOp": "toggle"
+              }
+             ]
+            },
+            "children": [
+             {
+              "id": "ma-base-journaling",
+              "type": "YStack",
+              "props": {
+               "width": 110,
+               "height": 100,
+               "gap": 10,
+               "alignItems": "center",
+               "justifyContent": "center",
+               "borderRadius": 8,
+               "backgroundColor": "#FFFFFF",
+               "overflow": "hidden",
+               "elevation": 2,
+               "shadowColor": "#000000",
+               "shadowOffset": {
+                "width": 0,
+                "height": 0
+               },
+               "shadowRadius": 15,
+               "shadowOpacity": 0.1,
+               "paddingHorizontal": 6
+              },
+              "children": [
+               {
+                "id": "ma-img-journaling",
+                "type": "Image",
+                "props": {
+                 "url": "https://raw.githubusercontent.com/MartinnRoca/that-girl-onboarding-assets/main/act-journaling.png",
+                 "width": 62,
+                 "height": 48,
+                 "resizeMode": "contain"
+                }
+               },
+               {
+                "id": "ma-lbl-journaling",
+                "type": "Text",
+                "props": {
+                 "color": "#000000",
+                 "content": "Journaling",
+                 "fontSize": 14,
+                 "fontFamily": "Georgia",
+                 "textAlign": "center"
+                }
+               }
+              ]
+             },
+             {
+              "id": "ma-sel-journaling",
+              "type": "YStack",
+              "props": {
+               "width": 110,
+               "height": 100,
+               "borderRadius": 8,
+               "borderWidth": 2,
+               "borderColor": "#c7b4a2",
+               "alignItems": "flex-end",
+               "justifyContent": "flex-start",
+               "padding": 6,
+               "renderWhen": {
+                "variable": "morningActivities",
+                "operator": "contains",
+                "value": "journaling"
+               }
+              },
+              "children": [
+               {
+                "id": "ma-badge-journaling",
+                "type": "YStack",
+                "props": {
+                 "width": 20,
+                 "height": 20,
+                 "borderRadius": 20,
+                 "backgroundColor": "#67513bcc",
+                 "alignItems": "center",
+                 "justifyContent": "center"
+                },
+                "children": [
+                 {
+                  "id": "ma-chk-journaling",
+                  "type": "Text",
+                  "props": {
+                   "color": "#FFFFFF",
+                   "content": "✓",
+                   "fontSize": 12
+                  }
+                 }
+                ]
+               }
+              ]
+             }
+            ]
+           },
+           {
+            "id": "ma-tile-breakfast",
+            "type": "ZStack",
+            "props": {
+             "width": 110,
+             "height": 100,
+             "onPress": [
+              {
+               "name": "morningActivities",
+               "type": "setVariable",
+               "value": "breakfast",
+               "label": "Mindful Breakfast",
+               "arrayOp": "toggle"
+              }
+             ]
+            },
+            "children": [
+             {
+              "id": "ma-base-breakfast",
+              "type": "YStack",
+              "props": {
+               "width": 110,
+               "height": 100,
+               "gap": 10,
+               "alignItems": "center",
+               "justifyContent": "center",
+               "borderRadius": 8,
+               "backgroundColor": "#FFFFFF",
+               "overflow": "hidden",
+               "elevation": 2,
+               "shadowColor": "#000000",
+               "shadowOffset": {
+                "width": 0,
+                "height": 0
+               },
+               "shadowRadius": 15,
+               "shadowOpacity": 0.1,
+               "paddingHorizontal": 6
+              },
+              "children": [
+               {
+                "id": "ma-img-breakfast",
+                "type": "Image",
+                "props": {
+                 "url": "https://raw.githubusercontent.com/MartinnRoca/that-girl-onboarding-assets/main/act-breakfast.png",
+                 "width": 62,
+                 "height": 48,
+                 "resizeMode": "contain"
+                }
+               },
+               {
+                "id": "ma-lbl-breakfast",
+                "type": "Text",
+                "props": {
+                 "color": "#000000",
+                 "content": "Mindful Breakfast",
+                 "fontSize": 14,
+                 "fontFamily": "Georgia",
+                 "textAlign": "center"
+                }
+               }
+              ]
+             },
+             {
+              "id": "ma-sel-breakfast",
+              "type": "YStack",
+              "props": {
+               "width": 110,
+               "height": 100,
+               "borderRadius": 8,
+               "borderWidth": 2,
+               "borderColor": "#c7b4a2",
+               "alignItems": "flex-end",
+               "justifyContent": "flex-start",
+               "padding": 6,
+               "renderWhen": {
+                "variable": "morningActivities",
+                "operator": "contains",
+                "value": "breakfast"
+               }
+              },
+              "children": [
+               {
+                "id": "ma-badge-breakfast",
+                "type": "YStack",
+                "props": {
+                 "width": 20,
+                 "height": 20,
+                 "borderRadius": 20,
+                 "backgroundColor": "#67513bcc",
+                 "alignItems": "center",
+                 "justifyContent": "center"
+                },
+                "children": [
+                 {
+                  "id": "ma-chk-breakfast",
+                  "type": "Text",
+                  "props": {
+                   "color": "#FFFFFF",
+                   "content": "✓",
+                   "fontSize": 12
+                  }
+                 }
+                ]
+               }
+              ]
+             }
+            ]
+           }
+          ]
+         },
+         {
+          "id": "ma-row2",
+          "type": "XStack",
+          "props": {
+           "width": "100%",
+           "justifyContent": "space-between",
+           "alignItems": "center"
+          },
+          "children": [
+           {
+            "id": "ma-tile-meditate",
+            "type": "ZStack",
+            "props": {
+             "width": 110,
+             "height": 100,
+             "onPress": [
+              {
+               "name": "morningActivities",
+               "type": "setVariable",
+               "value": "meditate",
+               "label": "Meditate",
+               "arrayOp": "toggle"
+              }
+             ]
+            },
+            "children": [
+             {
+              "id": "ma-base-meditate",
+              "type": "YStack",
+              "props": {
+               "width": 110,
+               "height": 100,
+               "gap": 10,
+               "alignItems": "center",
+               "justifyContent": "center",
+               "borderRadius": 8,
+               "backgroundColor": "#FFFFFF",
+               "overflow": "hidden",
+               "elevation": 2,
+               "shadowColor": "#000000",
+               "shadowOffset": {
+                "width": 0,
+                "height": 0
+               },
+               "shadowRadius": 15,
+               "shadowOpacity": 0.1,
+               "paddingHorizontal": 6
+              },
+              "children": [
+               {
+                "id": "ma-img-meditate",
+                "type": "Image",
+                "props": {
+                 "url": "https://raw.githubusercontent.com/MartinnRoca/that-girl-onboarding-assets/main/act-meditate.png",
+                 "width": 62,
+                 "height": 48,
+                 "resizeMode": "contain"
+                }
+               },
+               {
+                "id": "ma-lbl-meditate",
+                "type": "Text",
+                "props": {
+                 "color": "#000000",
+                 "content": "Meditate",
+                 "fontSize": 14,
+                 "fontFamily": "Georgia",
+                 "textAlign": "center"
+                }
+               }
+              ]
+             },
+             {
+              "id": "ma-sel-meditate",
+              "type": "YStack",
+              "props": {
+               "width": 110,
+               "height": 100,
+               "borderRadius": 8,
+               "borderWidth": 2,
+               "borderColor": "#c7b4a2",
+               "alignItems": "flex-end",
+               "justifyContent": "flex-start",
+               "padding": 6,
+               "renderWhen": {
+                "variable": "morningActivities",
+                "operator": "contains",
+                "value": "meditate"
+               }
+              },
+              "children": [
+               {
+                "id": "ma-badge-meditate",
+                "type": "YStack",
+                "props": {
+                 "width": 20,
+                 "height": 20,
+                 "borderRadius": 20,
+                 "backgroundColor": "#67513bcc",
+                 "alignItems": "center",
+                 "justifyContent": "center"
+                },
+                "children": [
+                 {
+                  "id": "ma-chk-meditate",
+                  "type": "Text",
+                  "props": {
+                   "color": "#FFFFFF",
+                   "content": "✓",
+                   "fontSize": 12
+                  }
+                 }
+                ]
+               }
+              ]
+             }
+            ]
+           },
+           {
+            "id": "ma-tile-planday",
+            "type": "ZStack",
+            "props": {
+             "width": 110,
+             "height": 100,
+             "onPress": [
+              {
+               "name": "morningActivities",
+               "type": "setVariable",
+               "value": "planday",
+               "label": "Plan Day",
+               "arrayOp": "toggle"
+              }
+             ]
+            },
+            "children": [
+             {
+              "id": "ma-base-planday",
+              "type": "YStack",
+              "props": {
+               "width": 110,
+               "height": 100,
+               "gap": 10,
+               "alignItems": "center",
+               "justifyContent": "center",
+               "borderRadius": 8,
+               "backgroundColor": "#FFFFFF",
+               "overflow": "hidden",
+               "elevation": 2,
+               "shadowColor": "#000000",
+               "shadowOffset": {
+                "width": 0,
+                "height": 0
+               },
+               "shadowRadius": 15,
+               "shadowOpacity": 0.1,
+               "paddingHorizontal": 6
+              },
+              "children": [
+               {
+                "id": "ma-img-planday",
+                "type": "Image",
+                "props": {
+                 "url": "https://raw.githubusercontent.com/MartinnRoca/that-girl-onboarding-assets/main/act-planday.png",
+                 "width": 62,
+                 "height": 48,
+                 "resizeMode": "contain"
+                }
+               },
+               {
+                "id": "ma-lbl-planday",
+                "type": "Text",
+                "props": {
+                 "color": "#000000",
+                 "content": "Plan Day",
+                 "fontSize": 14,
+                 "fontFamily": "Georgia",
+                 "textAlign": "center"
+                }
+               }
+              ]
+             },
+             {
+              "id": "ma-sel-planday",
+              "type": "YStack",
+              "props": {
+               "width": 110,
+               "height": 100,
+               "borderRadius": 8,
+               "borderWidth": 2,
+               "borderColor": "#c7b4a2",
+               "alignItems": "flex-end",
+               "justifyContent": "flex-start",
+               "padding": 6,
+               "renderWhen": {
+                "variable": "morningActivities",
+                "operator": "contains",
+                "value": "planday"
+               }
+              },
+              "children": [
+               {
+                "id": "ma-badge-planday",
+                "type": "YStack",
+                "props": {
+                 "width": 20,
+                 "height": 20,
+                 "borderRadius": 20,
+                 "backgroundColor": "#67513bcc",
+                 "alignItems": "center",
+                 "justifyContent": "center"
+                },
+                "children": [
+                 {
+                  "id": "ma-chk-planday",
+                  "type": "Text",
+                  "props": {
+                   "color": "#FFFFFF",
+                   "content": "✓",
+                   "fontSize": 12
+                  }
+                 }
+                ]
+               }
+              ]
+             }
+            ]
+           },
+           {
+            "id": "ma-tile-makebed",
+            "type": "ZStack",
+            "props": {
+             "width": 110,
+             "height": 100,
+             "onPress": [
+              {
+               "name": "morningActivities",
+               "type": "setVariable",
+               "value": "makebed",
+               "label": "Make bed",
+               "arrayOp": "toggle"
+              }
+             ]
+            },
+            "children": [
+             {
+              "id": "ma-base-makebed",
+              "type": "YStack",
+              "props": {
+               "width": 110,
+               "height": 100,
+               "gap": 10,
+               "alignItems": "center",
+               "justifyContent": "center",
+               "borderRadius": 8,
+               "backgroundColor": "#FFFFFF",
+               "overflow": "hidden",
+               "elevation": 2,
+               "shadowColor": "#000000",
+               "shadowOffset": {
+                "width": 0,
+                "height": 0
+               },
+               "shadowRadius": 15,
+               "shadowOpacity": 0.1,
+               "paddingHorizontal": 6
+              },
+              "children": [
+               {
+                "id": "ma-img-makebed",
+                "type": "Image",
+                "props": {
+                 "url": "https://raw.githubusercontent.com/MartinnRoca/that-girl-onboarding-assets/main/act-makebed.png",
+                 "width": 62,
+                 "height": 48,
+                 "resizeMode": "contain"
+                }
+               },
+               {
+                "id": "ma-lbl-makebed",
+                "type": "Text",
+                "props": {
+                 "color": "#000000",
+                 "content": "Make bed",
+                 "fontSize": 14,
+                 "fontFamily": "Georgia",
+                 "textAlign": "center"
+                }
+               }
+              ]
+             },
+             {
+              "id": "ma-sel-makebed",
+              "type": "YStack",
+              "props": {
+               "width": 110,
+               "height": 100,
+               "borderRadius": 8,
+               "borderWidth": 2,
+               "borderColor": "#c7b4a2",
+               "alignItems": "flex-end",
+               "justifyContent": "flex-start",
+               "padding": 6,
+               "renderWhen": {
+                "variable": "morningActivities",
+                "operator": "contains",
+                "value": "makebed"
+               }
+              },
+              "children": [
+               {
+                "id": "ma-badge-makebed",
+                "type": "YStack",
+                "props": {
+                 "width": 20,
+                 "height": 20,
+                 "borderRadius": 20,
+                 "backgroundColor": "#67513bcc",
+                 "alignItems": "center",
+                 "justifyContent": "center"
+                },
+                "children": [
+                 {
+                  "id": "ma-chk-makebed",
+                  "type": "Text",
+                  "props": {
+                   "color": "#FFFFFF",
+                   "content": "✓",
+                   "fontSize": 12
+                  }
+                 }
+                ]
+               }
+              ]
+             }
+            ]
+           }
+          ]
+         },
+         {
+          "id": "ma-row3",
+          "type": "XStack",
+          "props": {
+           "width": "100%",
+           "justifyContent": "space-between",
+           "alignItems": "center"
+          },
+          "children": [
+           {
+            "id": "ma-tile-music",
+            "type": "ZStack",
+            "props": {
+             "width": 110,
+             "height": 100,
+             "onPress": [
+              {
+               "name": "morningActivities",
+               "type": "setVariable",
+               "value": "music",
+               "label": "Music",
+               "arrayOp": "toggle"
+              }
+             ]
+            },
+            "children": [
+             {
+              "id": "ma-base-music",
+              "type": "YStack",
+              "props": {
+               "width": 110,
+               "height": 100,
+               "gap": 10,
+               "alignItems": "center",
+               "justifyContent": "center",
+               "borderRadius": 8,
+               "backgroundColor": "#FFFFFF",
+               "overflow": "hidden",
+               "elevation": 2,
+               "shadowColor": "#000000",
+               "shadowOffset": {
+                "width": 0,
+                "height": 0
+               },
+               "shadowRadius": 15,
+               "shadowOpacity": 0.1,
+               "paddingHorizontal": 6
+              },
+              "children": [
+               {
+                "id": "ma-img-music",
+                "type": "Image",
+                "props": {
+                 "url": "https://raw.githubusercontent.com/MartinnRoca/that-girl-onboarding-assets/main/act-music.png",
+                 "width": 62,
+                 "height": 48,
+                 "resizeMode": "contain"
+                }
+               },
+               {
+                "id": "ma-lbl-music",
+                "type": "Text",
+                "props": {
+                 "color": "#000000",
+                 "content": "Music",
+                 "fontSize": 14,
+                 "fontFamily": "Georgia",
+                 "textAlign": "center"
+                }
+               }
+              ]
+             },
+             {
+              "id": "ma-sel-music",
+              "type": "YStack",
+              "props": {
+               "width": 110,
+               "height": 100,
+               "borderRadius": 8,
+               "borderWidth": 2,
+               "borderColor": "#c7b4a2",
+               "alignItems": "flex-end",
+               "justifyContent": "flex-start",
+               "padding": 6,
+               "renderWhen": {
+                "variable": "morningActivities",
+                "operator": "contains",
+                "value": "music"
+               }
+              },
+              "children": [
+               {
+                "id": "ma-badge-music",
+                "type": "YStack",
+                "props": {
+                 "width": 20,
+                 "height": 20,
+                 "borderRadius": 20,
+                 "backgroundColor": "#67513bcc",
+                 "alignItems": "center",
+                 "justifyContent": "center"
+                },
+                "children": [
+                 {
+                  "id": "ma-chk-music",
+                  "type": "Text",
+                  "props": {
+                   "color": "#FFFFFF",
+                   "content": "✓",
+                   "fontSize": 12
+                  }
+                 }
+                ]
+               }
+              ]
+             }
+            ]
+           },
+           {
+            "id": "ma-tile-read",
+            "type": "ZStack",
+            "props": {
+             "width": 110,
+             "height": 100,
+             "onPress": [
+              {
+               "name": "morningActivities",
+               "type": "setVariable",
+               "value": "read",
+               "label": "Read",
+               "arrayOp": "toggle"
+              }
+             ]
+            },
+            "children": [
+             {
+              "id": "ma-base-read",
+              "type": "YStack",
+              "props": {
+               "width": 110,
+               "height": 100,
+               "gap": 10,
+               "alignItems": "center",
+               "justifyContent": "center",
+               "borderRadius": 8,
+               "backgroundColor": "#FFFFFF",
+               "overflow": "hidden",
+               "elevation": 2,
+               "shadowColor": "#000000",
+               "shadowOffset": {
+                "width": 0,
+                "height": 0
+               },
+               "shadowRadius": 15,
+               "shadowOpacity": 0.1,
+               "paddingHorizontal": 6
+              },
+              "children": [
+               {
+                "id": "ma-img-read",
+                "type": "Image",
+                "props": {
+                 "url": "https://raw.githubusercontent.com/MartinnRoca/that-girl-onboarding-assets/main/act-read.png",
+                 "width": 62,
+                 "height": 48,
+                 "resizeMode": "contain"
+                }
+               },
+               {
+                "id": "ma-lbl-read",
+                "type": "Text",
+                "props": {
+                 "color": "#000000",
+                 "content": "Read",
+                 "fontSize": 14,
+                 "fontFamily": "Georgia",
+                 "textAlign": "center"
+                }
+               }
+              ]
+             },
+             {
+              "id": "ma-sel-read",
+              "type": "YStack",
+              "props": {
+               "width": 110,
+               "height": 100,
+               "borderRadius": 8,
+               "borderWidth": 2,
+               "borderColor": "#c7b4a2",
+               "alignItems": "flex-end",
+               "justifyContent": "flex-start",
+               "padding": 6,
+               "renderWhen": {
+                "variable": "morningActivities",
+                "operator": "contains",
+                "value": "read"
+               }
+              },
+              "children": [
+               {
+                "id": "ma-badge-read",
+                "type": "YStack",
+                "props": {
+                 "width": 20,
+                 "height": 20,
+                 "borderRadius": 20,
+                 "backgroundColor": "#67513bcc",
+                 "alignItems": "center",
+                 "justifyContent": "center"
+                },
+                "children": [
+                 {
+                  "id": "ma-chk-read",
+                  "type": "Text",
+                  "props": {
+                   "color": "#FFFFFF",
+                   "content": "✓",
+                   "fontSize": 12
+                  }
+                 }
+                ]
+               }
+              ]
+             }
+            ]
+           },
+           {
+            "id": "ma-tile-walk",
+            "type": "ZStack",
+            "props": {
+             "width": 110,
+             "height": 100,
+             "onPress": [
+              {
+               "name": "morningActivities",
+               "type": "setVariable",
+               "value": "walk",
+               "label": "Walk",
+               "arrayOp": "toggle"
+              }
+             ]
+            },
+            "children": [
+             {
+              "id": "ma-base-walk",
+              "type": "YStack",
+              "props": {
+               "width": 110,
+               "height": 100,
+               "gap": 10,
+               "alignItems": "center",
+               "justifyContent": "center",
+               "borderRadius": 8,
+               "backgroundColor": "#FFFFFF",
+               "overflow": "hidden",
+               "elevation": 2,
+               "shadowColor": "#000000",
+               "shadowOffset": {
+                "width": 0,
+                "height": 0
+               },
+               "shadowRadius": 15,
+               "shadowOpacity": 0.1,
+               "paddingHorizontal": 6
+              },
+              "children": [
+               {
+                "id": "ma-img-walk",
+                "type": "Image",
+                "props": {
+                 "url": "https://raw.githubusercontent.com/MartinnRoca/that-girl-onboarding-assets/main/act-walk.png",
+                 "width": 62,
+                 "height": 48,
+                 "resizeMode": "contain"
+                }
+               },
+               {
+                "id": "ma-lbl-walk",
+                "type": "Text",
+                "props": {
+                 "color": "#000000",
+                 "content": "Walk",
+                 "fontSize": 14,
+                 "fontFamily": "Georgia",
+                 "textAlign": "center"
+                }
+               }
+              ]
+             },
+             {
+              "id": "ma-sel-walk",
+              "type": "YStack",
+              "props": {
+               "width": 110,
+               "height": 100,
+               "borderRadius": 8,
+               "borderWidth": 2,
+               "borderColor": "#c7b4a2",
+               "alignItems": "flex-end",
+               "justifyContent": "flex-start",
+               "padding": 6,
+               "renderWhen": {
+                "variable": "morningActivities",
+                "operator": "contains",
+                "value": "walk"
+               }
+              },
+              "children": [
+               {
+                "id": "ma-badge-walk",
+                "type": "YStack",
+                "props": {
+                 "width": 20,
+                 "height": 20,
+                 "borderRadius": 20,
+                 "backgroundColor": "#67513bcc",
+                 "alignItems": "center",
+                 "justifyContent": "center"
+                },
+                "children": [
+                 {
+                  "id": "ma-chk-walk",
+                  "type": "Text",
+                  "props": {
+                   "color": "#FFFFFF",
+                   "content": "✓",
+                   "fontSize": 12
+                  }
+                 }
+                ]
+               }
+              ]
+             }
+            ]
+           }
+          ]
+         }
+        ]
+       },
+       {
+        "id": "ma-spy",
+        "type": "YStack",
+        "props": {
+         "flex": 1,
+         "width": "100%"
+        },
+        "children": []
+       },
+       {
+        "id": "ma-btn",
+        "type": "Button",
+        "props": {
+         "color": "#FFFFFF",
+         "label": "Continue",
+         "width": "100%",
+         "actions": [
+          "continue"
+         ],
+         "variant": "filled",
+         "fontSize": 16,
+         "textAlign": "center",
+         "fontFamily": "Georgia",
+         "fontWeight": "700",
+         "borderRadius": 16,
+         "backgroundColor": "#000000",
+         "paddingVertical": 16,
+         "paddingHorizontal": 24,
+         "backgroundGradient": {
+          "to": "bottom",
+          "from": "top",
+          "type": "linear",
+          "stops": [
+           {
+            "color": "#515151",
+            "position": 0
+           },
+           {
+            "color": "#000000",
+            "position": 1
+           }
+          ]
+         }
+        }
+       },
+       {
+        "id": "ma-spb",
+        "type": "YStack",
+        "props": {
+         "width": "100%",
+         "height": 12
+        },
+        "children": []
+       }
+      ]
+     }
     ]
-  },
-  "figmaUrl": "https://www.figma.com/design/t8RgAyKbdSS0P8jM3RIoN3/That-Girl?node-id=1301-898",
-  "nextStep": null,
-  "customPayload": null,
-  "continueButtonLabel": "Continue",
-  "displayProgressHeader": false
+   }
+  ]
+ },
+ "figmaUrl": "https://www.figma.com/design/t8RgAyKbdSS0P8jM3RIoN3/That-Girl?node-id=1251-2266",
+ "nextStep": null,
+ "customPayload": null,
+ "continueButtonLabel": "Continue",
+ "displayProgressHeader": false
 }
