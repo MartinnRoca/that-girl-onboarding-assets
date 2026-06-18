@@ -239,9 +239,18 @@
                "justifyContent": "flex-start",
                "padding": 6,
                "renderWhen": {
-                "variable": "morningActivities",
-                "operator": "contains",
-                "value": "hydrate"
+                "logic": "and",
+                "conditions": [
+                 {
+                  "variable": "morningActivities",
+                  "operator": "is_not_empty"
+                 },
+                 {
+                  "variable": "morningActivities",
+                  "operator": "contains",
+                  "value": "hydrate"
+                 }
+                ]
                }
               },
               "children": [
@@ -348,9 +357,18 @@
                "justifyContent": "flex-start",
                "padding": 6,
                "renderWhen": {
-                "variable": "morningActivities",
-                "operator": "contains",
-                "value": "skincare"
+                "logic": "and",
+                "conditions": [
+                 {
+                  "variable": "morningActivities",
+                  "operator": "is_not_empty"
+                 },
+                 {
+                  "variable": "morningActivities",
+                  "operator": "contains",
+                  "value": "skincare"
+                 }
+                ]
                }
               },
               "children": [
@@ -457,9 +475,18 @@
                "justifyContent": "flex-start",
                "padding": 6,
                "renderWhen": {
-                "variable": "morningActivities",
-                "operator": "contains",
-                "value": "stretching"
+                "logic": "and",
+                "conditions": [
+                 {
+                  "variable": "morningActivities",
+                  "operator": "is_not_empty"
+                 },
+                 {
+                  "variable": "morningActivities",
+                  "operator": "contains",
+                  "value": "stretching"
+                 }
+                ]
                }
               },
               "children": [
@@ -577,9 +604,18 @@
                "justifyContent": "flex-start",
                "padding": 6,
                "renderWhen": {
-                "variable": "morningActivities",
-                "operator": "contains",
-                "value": "workout"
+                "logic": "and",
+                "conditions": [
+                 {
+                  "variable": "morningActivities",
+                  "operator": "is_not_empty"
+                 },
+                 {
+                  "variable": "morningActivities",
+                  "operator": "contains",
+                  "value": "workout"
+                 }
+                ]
                }
               },
               "children": [
@@ -686,9 +722,18 @@
                "justifyContent": "flex-start",
                "padding": 6,
                "renderWhen": {
-                "variable": "morningActivities",
-                "operator": "contains",
-                "value": "journaling"
+                "logic": "and",
+                "conditions": [
+                 {
+                  "variable": "morningActivities",
+                  "operator": "is_not_empty"
+                 },
+                 {
+                  "variable": "morningActivities",
+                  "operator": "contains",
+                  "value": "journaling"
+                 }
+                ]
                }
               },
               "children": [
@@ -795,9 +840,18 @@
                "justifyContent": "flex-start",
                "padding": 6,
                "renderWhen": {
-                "variable": "morningActivities",
-                "operator": "contains",
-                "value": "breakfast"
+                "logic": "and",
+                "conditions": [
+                 {
+                  "variable": "morningActivities",
+                  "operator": "is_not_empty"
+                 },
+                 {
+                  "variable": "morningActivities",
+                  "operator": "contains",
+                  "value": "breakfast"
+                 }
+                ]
                }
               },
               "children": [
@@ -915,9 +969,18 @@
                "justifyContent": "flex-start",
                "padding": 6,
                "renderWhen": {
-                "variable": "morningActivities",
-                "operator": "contains",
-                "value": "meditate"
+                "logic": "and",
+                "conditions": [
+                 {
+                  "variable": "morningActivities",
+                  "operator": "is_not_empty"
+                 },
+                 {
+                  "variable": "morningActivities",
+                  "operator": "contains",
+                  "value": "meditate"
+                 }
+                ]
                }
               },
               "children": [
@@ -1024,9 +1087,18 @@
                "justifyContent": "flex-start",
                "padding": 6,
                "renderWhen": {
-                "variable": "morningActivities",
-                "operator": "contains",
-                "value": "planday"
+                "logic": "and",
+                "conditions": [
+                 {
+                  "variable": "morningActivities",
+                  "operator": "is_not_empty"
+                 },
+                 {
+                  "variable": "morningActivities",
+                  "operator": "contains",
+                  "value": "planday"
+                 }
+                ]
                }
               },
               "children": [
@@ -1133,9 +1205,18 @@
                "justifyContent": "flex-start",
                "padding": 6,
                "renderWhen": {
-                "variable": "morningActivities",
-                "operator": "contains",
-                "value": "makebed"
+                "logic": "and",
+                "conditions": [
+                 {
+                  "variable": "morningActivities",
+                  "operator": "is_not_empty"
+                 },
+                 {
+                  "variable": "morningActivities",
+                  "operator": "contains",
+                  "value": "makebed"
+                 }
+                ]
                }
               },
               "children": [
@@ -1253,9 +1334,18 @@
                "justifyContent": "flex-start",
                "padding": 6,
                "renderWhen": {
-                "variable": "morningActivities",
-                "operator": "contains",
-                "value": "music"
+                "logic": "and",
+                "conditions": [
+                 {
+                  "variable": "morningActivities",
+                  "operator": "is_not_empty"
+                 },
+                 {
+                  "variable": "morningActivities",
+                  "operator": "contains",
+                  "value": "music"
+                 }
+                ]
                }
               },
               "children": [
@@ -1362,9 +1452,18 @@
                "justifyContent": "flex-start",
                "padding": 6,
                "renderWhen": {
-                "variable": "morningActivities",
-                "operator": "contains",
-                "value": "read"
+                "logic": "and",
+                "conditions": [
+                 {
+                  "variable": "morningActivities",
+                  "operator": "is_not_empty"
+                 },
+                 {
+                  "variable": "morningActivities",
+                  "operator": "contains",
+                  "value": "read"
+                 }
+                ]
                }
               },
               "children": [
@@ -1471,9 +1570,18 @@
                "justifyContent": "flex-start",
                "padding": 6,
                "renderWhen": {
-                "variable": "morningActivities",
-                "operator": "contains",
-                "value": "walk"
+                "logic": "and",
+                "conditions": [
+                 {
+                  "variable": "morningActivities",
+                  "operator": "is_not_empty"
+                 },
+                 {
+                  "variable": "morningActivities",
+                  "operator": "contains",
+                  "value": "walk"
+                 }
+                ]
                }
               },
               "children": [
